@@ -1,0 +1,54 @@
+{
+    /* filepath: data/content/service/ham-radio-exam-prep.json */
+    "id": "ham-radio-exam-prep",
+    "title": "Ham Radio Exam Prep: Amatör Telsizcilik Sınavı Hazırlık Uygulaması",
+    "seo": {
+        "metaTitle": "Amatör Telsizcilik Sınavı Hazırlık - A, B ve C Sınıfı Soruları",
+        "metaDescription": "Amatör telsizcilik lisans sınavlarına hazırlık için en kapsamlı araç. Güncel soru bankası, teknik terimler sözlüğü ve interaktif deneme sınavları.",
+        "keywords": [
+            "Amatör Telsizcilik Sınavı",
+            "Ham Radio Exam Prep",
+            "Telsizcilik Sınav Soruları",
+            "Kıyı Emniyeti Telsiz Sınavı"
+        ],
+        "userIntent": "Amatör telsizci olmak isteyen kullanıcıların teknik sınavı geçmek için güncel soru ve çalışma materyallerine erişmesi."
+    },
+    "content": {
+        "hero": {
+            "heading": "Amatör Telsiz Dünyasına İlk Adımı Atın",
+            "subheading": "Teknik, işletme ve kanun konularında binlerce güncel soru ile lisans sınavına evinizden hazırlanın.",
+            "cta": {
+                "primary": "Play Store'da İncele",
+                "secondary": "Web Sürümünü Aç"
+            }
+        },
+        "features": [
+            {
+                "title": "Detaylı Soru Bankası",
+                "description": "Telsiz tekniği, haberleşme kuralları ve ulusal/uluslararası düzenlemeleri içeren kapsamlı PDF ve test içerikleri.",
+                "semanticKeywords": [
+                    "teknik sınav hazırlık",
+                    "amatör telsiz lisansı",
+                    "KEGM telsiz sınavı"
+                ]
+            },
+            {
+                "title": "Kişiselleştirilmiş Çalışma Planı",
+                "description": "Zayıf olduğunuz konuları tespit eden ve çalışma temponuzu optimize eden AI destekli analiz motoru.",
+                "semanticKeywords": [
+                    "akıllı çalışma sistemi",
+                    "konu bazlı testler",
+                    "hata odaklı öğrenme"
+                ]
+            }
+        ]
+    },
+    "schema": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Ham Radio Exam Prep",
+        "operatingSystem": "Android, Web",
+        "applicationCategory": "EducationalApplication",
+        "description": "Comprehensive study tool for amateur radio license exams globally."
+    }
+}

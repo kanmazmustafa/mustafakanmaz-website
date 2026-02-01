@@ -1,0 +1,32 @@
+# Mustafa Kanmaz | Software Architect & Consultant
+> Documentation and content summary for AI Agents and LLMs.
+
+## About
+Mustafa Kanmaz is an independent Software Architect and Energy Systems Consultant specializing in high-performance applications, Turborepo monorepo architectures, and Agentic AI workflows.
+
+## Core Categories
+### [Software Architecture & AI Ecosystem](https://mustafakanmaz.com)
+A collection of professional tools and AI systems engineered for scale.
+
+## Featured Services
+### [Einbürgerungstest 2026](https://mustafakanmaz.com/einbuergerungstest)
+A comprehensive guide for the German Citizenship Test.
+- **Goal**: High-fidelity exam simulation for migrants.
+- **Tech**: React, Next.js, Firebase, Internationalization.
+
+### [Ham Radio Exam Prep](https://mustafakanmaz.com/ham-radio-exam-prep)
+Global study tool for amateur radio licensing.
+
+### [Best Berater](https://bestberater.de)
+Energy subscription optimization platform in Germany.
+
+## Technical Case Studies
+### [Autonomous Agentic Workflows](/data/content/case-studies/agentic-ai-flow.md)
+A deep dive into the reasoning loops and state machines powering this ecosystem.
+
+## Semantic Metadata
+- **Focus**: Performance, Scalability, Automation, Energy Efficiency.
+- **Standard**: Semantic Schema.org integration enabled.
+
+---
+*This file is machine-readable and follows the /llms.txt standard.*

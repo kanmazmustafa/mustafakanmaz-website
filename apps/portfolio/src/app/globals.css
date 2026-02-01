@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-roboto-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: var(--font-playfair), serif;
+  --font-outfit: var(--font-outfit), sans-serif;
+  --font-jakarta: var(--font-jakarta), sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #6366f1;
+  --color-primary-foreground: #ffffff;
+  --color-slate-850: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+
+  /* Citizenship / Shadcn Colors */
+  --color-cit-border: hsl(var(--cit-border));
+  --color-cit-input: hsl(var(--cit-input));
+  --color-cit-ring: hsl(var(--cit-ring));
+  --color-cit-background: hsl(var(--cit-background));
+  --color-cit-foreground: hsl(var(--cit-foreground));
+  --color-cit-primary: hsl(var(--cit-primary));
+  --color-cit-primary-foreground: hsl(var(--cit-primary-foreground));
+  --color-cit-secondary: hsl(var(--cit-secondary));
+  --color-cit-secondary-foreground: hsl(var(--cit-secondary-foreground));
+  --color-cit-destructive: hsl(var(--cit-destructive));
+  --color-cit-destructive-foreground: hsl(var(--cit-destructive-foreground));
+  --color-cit-muted: hsl(var(--cit-muted));
+  --color-cit-muted-foreground: hsl(var(--cit-muted-foreground));
+  --color-cit-accent: hsl(var(--cit-accent));
+  --color-cit-accent-foreground: hsl(var(--cit-accent-foreground));
+  --color-cit-popover: hsl(var(--cit-popover));
+  --color-cit-popover-foreground: hsl(var(--cit-popover-foreground));
+  --color-cit-card: hsl(var(--cit-card));
+  --color-cit-card-foreground: hsl(var(--cit-card-foreground));
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-fade-in: fadeIn 0.5s ease-out forwards;
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #020617;
+
+  /* Citizenship Defaults (HSL) */
+  --cit-background: 0 0% 100%;
+  --cit-foreground: 222.2 84% 4.9%;
+  --cit-card: 0 0% 100%;
+  --cit-card-foreground: 222.2 84% 4.9%;
+  --cit-popover: 0 0% 100%;
+  --cit-popover-foreground: 222.2 84% 4.9%;
+  --cit-primary: 222.2 47.4% 11.2%;
+  --cit-primary-foreground: 210 40% 98%;
+  --cit-secondary: 210 40% 96.1%;
+  --cit-secondary-foreground: 222.2 47.4% 11.2%;
+  --cit-muted: 210 40% 96.1%;
+  --cit-muted-foreground: 215.4 16.3% 46.9%;
+  --cit-accent: 210 40% 96.1%;
+  --cit-accent-foreground: 222.2 47.4% 11.2%;
+  --cit-destructive: 0 84.2% 60.2%;
+  --cit-destructive-foreground: 210 40% 98%;
+  --cit-border: 214.3 31.8% 91.4%;
+  --cit-input: 214.3 31.8% 91.4%;
+  --cit-ring: 222.2 84% 4.9%;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+
+  /* Citizenship Dark Defaults */
+  --cit-background: 222.2 84% 4.9%;
+  --cit-foreground: 210 40% 98%;
+  --cit-card: 222.2 84% 4.9%;
+  --cit-card-foreground: 210 40% 98%;
+  --cit-popover: 222.2 84% 4.9%;
+  --cit-popover-foreground: 210 40% 98%;
+  --cit-primary: 210 40% 98%;
+  --cit-primary-foreground: 222.2 47.4% 11.2%;
+  --cit-secondary: 217.2 32.6% 17.5%;
+  --cit-secondary-foreground: 210 40% 98%;
+  --cit-muted: 217.2 32.6% 17.5%;
+  --cit-muted-foreground: 215 20.2% 65.1%;
+  --cit-accent: 217.2 32.6% 17.5%;
+  --cit-accent-foreground: 210 40% 98%;
+  --cit-destructive: 0 62.8% 30.6%;
+  --cit-destructive-foreground: 210 40% 98%;
+  --cit-border: 217.2 32.6% 17.5%;
+  --cit-input: 217.2 32.6% 17.5%;
+  --cit-ring: 212.7 26.8% 83.9%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv09", "cv11";
+  }
+}
+
+/* Utilities */
+.container-wide {
+  @apply max-w-7xl mx-auto px-6 lg:px-8;
+}
+
+.glass-nav {
+  @apply bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-white/10;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400;
+}

@@ -1,0 +1,47 @@
+{
+    /* filepath: data/content/service/best-berater.json */
+    "id": "best-berater",
+    "title": "Best Berater: Almanya Enerji Aboneliği ve Danışmanlık Otomasyonu",
+    "seo": {
+        "metaTitle": "Almanya Enerji Danışmanlığı - Elektrik ve Gaz Tasarrufu Otomasyonu",
+        "metaDescription": "Almanya'daki elektrik ve gaz aboneliklerinizi optimize eden, yüksek performanslı algoritmalarla en iyi fiyatı bulan danışmanlık platformu.",
+        "keywords": [
+            "Best Berater",
+            "Energieberatung Deutschland",
+            "Strompreisvergleich",
+            "Gasvertrag Optimierung"
+        ],
+        "userIntent": "Almanya'da yaşayan kullanıcıların yüksek enerji maliyetlerini düşürmek için otomatik abonelik yönetimi ve danışmanlık hizmeti alması."
+    },
+    "content": {
+        "hero": {
+            "heading": "Enerji Giderlerinizi Yazılım Gücüyle Optimize Edin",
+            "subheading": "Karmaşık enerji piyasasını şeffaf hale getiren, tamamen otomatize edilmiş abonelik yönetim sistemi.",
+            "cta": {
+                "primary": "Platformu Ziyaret Et",
+                "secondary": "Tasarruf Hesapla"
+            }
+        },
+        "features": [
+            {
+                "title": "Yüksek Performanslı Algoritmalar",
+                "description": "Binlerce teklifi saniyeler içinde tarayan ve sizin için en avantajlı olanı seçen otonom sistem.",
+                "semanticKeywords": [
+                    "otomatik tarife karşılaştırma",
+                    "enerji tasarruf algoritması",
+                    "abonelik optimizasyonu"
+                ]
+            }
+        ]
+    },
+    "schema": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Best Berater Energy Consultancy",
+        "provider": {
+            "@type": "Person",
+            "name": "Mustafa Kanmaz"
+        },
+        "description": "Automated energy subscription management and consultancy platform in Germany."
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "home": {
+        "app_title": "Naturalization Test 2026",
+        "overall_success": "Overall Success",
+        "main_modes": "Main Modes",
+        "categories_label": "Categories",
+        "quiz_simulation": "Exam Simulation",
+        "quiz_simulation_sub": "33 Questions • 45 Minutes",
+        "my_errors": "My Mistakes",
+        "my_errors_sub": "Review Your Mistakes",
+        "categories": {
+            "democracy": "Democracy",
+            "history": "History",
+            "society": "People & Society",
+            "law": "Law & Order"
+        }
+    },
+    "drawer": {
+        "user_profile": "User Profile",
+        "lang_selection": "Language Selection",
+        "state_selection": "State Selection",
+        "share": "Share with Friends",
+        "premium_edition": "Premium Edition"
+    },
+    "premium": {
+        "elite_access": "ELITE ACCESS",
+        "ad_free": "Ad-Free Experience",
+        "upgrade_btn": "UPGRADE TO PREMIUM"
+    },
+    "common": {
+        "close": "Close"
+    }
+}
+
+{
+    "practice": {
+        "prev": "PREVIOUS",
+        "next": "NEXT",
+        "finish": "FINISH",
+        "explanation": "Explanation",
+        "no_explanation": "No explanation found for this question."
+    }
+}
+
+{
+    "home": {
+        "categories": {
+            "democracy": "Politics in Democracy",
+            "history": "History and Responsibility",
+            "society": "People and Society"
+        }
+    }
+}
+
+{
+    "result": {
+        "app_bar_title": "Exam Result",
+        "congrats": "CONGRATULATIONS!",
+        "failed": "FAILED...",
+        "success_msg": "You passed the German Citizenship Test!",
+        "failed_msg": "Unfortunately, you didn't pass the threshold.",
+        "score_label": "CORRECT ANSWERS",
+        "review_errors": "REVIEW MISTAKES",
+        "home_btn": "BACK TO HOME"
+    }
+}
+
+{
+    "review": {
+        "app_bar_title": "Review Mistakes",
+        "perfect_title": "PERFECT!",
+        "perfect_desc": "You have no mistakes. By answering all questions correctly, you've proved you're a real expert!",
+        "empty_answer": "* You left this question blank.",
+        "explanation": "Explanation"
+    },
+    "common": {
+        "back_home": "BACK TO HOME",
+        "home_tooltip": "Return to Home Screen"
+    }
+}

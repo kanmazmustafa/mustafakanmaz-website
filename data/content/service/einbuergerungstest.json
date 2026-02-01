@@ -1,0 +1,68 @@
+{
+    /* filepath: data/content/service/einbuergerungstest.json */
+    "id": "einbuergerungstest",
+    "title": "Einbürgerungstest 2026: Almanca Vatandaşlık Sınavı Hazırlık Rehberi",
+    "seo": {
+        "metaTitle": "Einbürgerungstest 2026 Hazırlık - 300+ Soru & Eyalet Soruları",
+        "metaDescription": "Almanya vatandaşlık sınavı (Einbürgerungstest) için en kapsamlı hazırlık platformu. 300 genel soru, 16 eyalet sorusu ve interaktif sınav simülasyonu.",
+        "keywords": [
+            "Einbürgerungstest 2026",
+            "Almanya vatandaşlık sınavı soruları",
+            "Leben in Deutschland test",
+            "Alman vatandaşlığı sınav hazırlık"
+        ],
+        "userIntent": "Alman vatandaşlığına geçiş sürecindeki kullanıcıların sınavı başarıyla geçmek için güncel soru ve simülasyon arayışını karşılamak."
+    },
+    "content": {
+        "hero": {
+            "heading": "Almanya Vatandaşlık Sınavını (Einbürgerungstest) Güvenle Geçin",
+            "subheading": "300'den fazla resmi soru ve eyalete özel içeriklerle 2026 sınav formatına %100 uyumlu hazırlık platformu.",
+            "cta": {
+                "primary": "Play Store'dan İndir",
+                "secondary": "Web App'i Aç"
+            }
+        },
+        "features": [
+            {
+                "title": "Kapsamlı Soru Bankası",
+                "description": "BAMF onaylı 300 genel soru ve 16 federal eyaletin tüm özel sorularına anında erişim.",
+                "semanticKeywords": [
+                    "BAMF soru kataloğu",
+                    "eyalet soruları",
+                    "güncel vatandaşlık soruları"
+                ]
+            },
+            {
+                "title": "Gerçekçi Sınav Simülasyonu",
+                "description": "Zaman sınırlı ve gerçek sınav ağırlığına sahip interaktif testlerle kendinizi test edin.",
+                "semanticKeywords": [
+                    "interaktif deneme sınavı",
+                    "sınav süresi yönetimi",
+                    "başarı takibi"
+                ]
+            },
+            {
+                "title": "Akıllı İlerleme Takibi",
+                "description": "Hatalarınızı analiz edin, üzerinde çalışmanız gereken konulara odaklanın ve öğrenme eğrinizi görün.",
+                "semanticKeywords": [
+                    "hata analizi",
+                    "öğrenme istatistikleri",
+                    "performans raporu"
+                ]
+            }
+        ]
+    },
+    "schema": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Einbürgerungstest 2026",
+        "operatingSystem": "Android, Web",
+        "applicationCategory": "EducationalApplication",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "description": "Comprehensive preparation guide for the German naturalization test with 300+ questions and state-specific content."
+    }
+}

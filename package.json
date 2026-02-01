@@ -1,0 +1,16 @@
+{
+    "name": "mustafakanmaz-monorepo",
+    "packageManager": "pnpm@8.15.4",
+    "scripts": {
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "clean": "turbo clean",
+        "deploy": "firebase deploy --only hosting --non-interactive"
+    },
+    "devDependencies": {
+        "esbuild": "^0.27.2",
+        "node-which": "^1.0.0",
+        "turbo": "latest"
+    }
+}

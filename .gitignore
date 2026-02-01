@@ -1,0 +1,52 @@
+# Dependencies
+**/node_modules/
+.pnpm-store/
+
+# Turbo
+**/.turbo/
+
+# Next.js
+**/.next/
+**/out/
+**/build/
+
+# Flutter/Dart
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/build/
+
+# Firebase
+**/.firebase/
+**/firebase-debug.log
+**/firestore-debug.log
+**/pubsub-debug.log
+**/ui-debug.log
+
+# IDEs
+**/.vscode/
+**/.idea/
+**/*.iml
+**/*.iws
+**/*.swp
+**/*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.secret
+
+# Logs
+**/deploy_debug.log
+**/deploy_log*.txt
+**/dump_output.txt

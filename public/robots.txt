@@ -1,0 +1,26 @@
+# Robots.txt for mustafakanmaz.com
+# optimized for SEO and AI/LLM Bots
+
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+Disallow: /build/
+Disallow: /out/
+Disallow: /firebase/
+
+# AI Crawler Special Rules
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://mustafakanmaz.com/sitemap.xml

@@ -1,0 +1,32 @@
+{
+    /* filepath: data/content/category/ecosystem.json */
+    "id": "portfolio-ecosystem",
+    "name": "Software Architecture & AI Ecosystem",
+    "seo": {
+        "metaTitle": "Mustafa Kanmaz | Yazılım Mimarisi ve Agentic AI Çözümleri",
+        "metaDescription": "Yüksek performanslı sistemler, Agentic AI iş akışları ve ölçeklenebilir dijital iş modelleri üzerine uzmanlaşmış yazılım ekosistemi.",
+        "keywords": [
+            "Yazılım Mimarisi",
+            "Agentic AI",
+            "Yapay Zeka İş Akışları",
+            "Yüksek Performanslı Uygulamalar"
+        ],
+        "userIntent": "Kurumsal ve bireysel kullanıcıların karmaşık teknik problemleri için mimari danışmanlık ve yapay zeka entegrasyon çözümleri bulması."
+    },
+    "description": "Mustafa Kanmaz tarafından geliştirilen, mimari mükemmellik ve otonom yapay zeka sistemlerini birleştiren dijital ürünler kategorisi.",
+    "services": [
+        "einbuergerungstest",
+        "ham-radio-exam-prep",
+        "bestberater"
+    ],
+    "schema": {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "provider": {
+            "@type": "Person",
+            "name": "Mustafa Kanmaz"
+        },
+        "serviceType": "Software Development and AI Consulting",
+        "areaServed": "Global"
+    }
+}
