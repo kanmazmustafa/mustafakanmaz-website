@@ -38,10 +38,7 @@
     "register_btn": "Register",
     "register_title": "Register",
     "remember_me": "Remember Me",
-    "welcome_back": "Welcome Back",
-    "back_to_home": "Back to Home",
-    "error_popup_closed": "Login popup was closed before completion",
-    "error_operation_not_allowed": "This operation is not allowed"
+    "welcome_back": "Welcome Back"
   },
   "common": {
     "back": "Back",
@@ -74,6 +71,9 @@
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Remove Ads",
+    "select_state": "Select State",
     "select_state_placeholder": "[MISSING] Eyalet Seçin",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -82,10 +82,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "[MISSING] İlerlemeni takip et ve sınava hazırlan.",
     "success_rate": "Success Rate",
-    "welcome": "Welcome, {name}",
-    "upgrade_caps": "UPGRADE",
-    "remove_ads": "Remove Ads",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "upgrade_caps": "Upgrade Caps",
+    "welcome": "Welcome, {name}"
   },
   "disclaimer": {
     "accept": "UNDERSTAND & START",
@@ -105,8 +103,15 @@
     "success": "Success",
     "user_profile": "User Profile"
   },
+  "footer": {
+    "about": "About",
+    "about_content": "Citizenship Test 2026 is a comprehensive tool designed for those preparing for the German citizenship exam.\n\nWith this app, you can run exam simulations, track your mistakes, and boost your success.\n\nVersion: 1.0.2",
+    "about_title": "About App",
+    "legal": "Legal Disclaimer"
+  },
   "home": {
     "app_title": "Citizenship Test 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politics in Democracy",
       "general_test": "General Test",
@@ -116,6 +121,7 @@
     },
     "categories_label": "Categories",
     "main_modes": "Main Modes",
+    "mistakes": "Mistakes",
     "my_bookmarks": "My Bookmarks",
     "my_bookmarks_sub": "Review saved questions",
     "my_errors": "My Mistakes",
@@ -124,10 +130,10 @@
     "overall_success": "Overall Success",
     "practice": "Practice",
     "premium_edition": "Premium Edition",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Overall Progress",
     "quiz_simulation": "Exam Simulation",
     "quiz_simulation_sub": "33 Questions • 60 Minutes",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "welcome": "Welcome"
   },
   "practice": {
@@ -143,6 +149,7 @@
   "premium": {
     "ad_not_ready": "The ad is not ready yet. Please try again in a few minutes.",
     "badge": "PREMIUM",
+    "best_value": "BEST VALUE",
     "lifetime_sub": "Remove ads permanently",
     "lifetime_title": "Lifetime Premium",
     "member": "Premium Member",
@@ -156,9 +163,8 @@
     "store_unavailable": "Could not connect to Google Play Store.",
     "temp_sub": "Watch an ad for temporary access",
     "temp_title": "2h Ad-Free Mode",
-    "upgrade_btn": "UPGRADE TO PREMIUM",
     "unlock_potential": "Unlock the full potential of your preparation.",
-    "best_value": "BEST VALUE"
+    "upgrade_btn": "UPGRADE TO PREMIUM"
   },
   "premium_features": {
     "ad_free_2h": "2 Hours Ad-Free",
@@ -185,6 +191,8 @@
     "failed": "FAILED...",
     "failed_msg": "Unfortunately, you didn't pass.",
     "home_btn": "BACK TO HOME",
+    "retake_exam": "Retake Exam",
+    "retry": "Retry",
     "review_errors": "REVIEW MISTAKES",
     "score_label": "CORRECT ANSWERS",
     "success_msg": "You passed the Citizenship Test!"

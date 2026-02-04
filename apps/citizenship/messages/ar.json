@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "إزالة الإعلانات",
+    "select_state": "Select State",
     "select_state_placeholder": "اختر المقاطعة",
     "selected_state": "المقاطعة المحددة",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "مرحبًا، {name}",
     "upgrade_caps": "ترقية",
-    "remove_ads": "إزالة الإعلانات"
+    "welcome": "مرحبًا، {name}"
   },
   "disclaimer": {
     "accept": "فهمت وابدأ",
@@ -104,8 +105,15 @@
     "success": "نجاح",
     "user_profile": "ملف المستخدم"
   },
+  "footer": {
+    "about": "حول التطبيق",
+    "about_content": "اختبار الجنسية 2026 هو أداة شاملة مصممة للمساعدة في التحضير لاختبار الجنسية الألمانية.\n\nمن خلال هذا التطبيق، يمكنك إجراء محاكاة للاختبار، وتتبع أخطائك، وزيادة فرص نجاحك.\n\nالإصدار: 1.0.2",
+    "about_title": "عن التطبيق",
+    "legal": "إخلاء المسؤولية القانونية"
+  },
   "home": {
     "app_title": "اختبار الجنسية 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "السياسة في الديمقراطية",
       "general_test": "اختبار عام",
@@ -115,6 +123,7 @@
     },
     "categories_label": "الفئات",
     "main_modes": "الأوضاع الرئيسية",
+    "mistakes": "Mistakes",
     "my_bookmarks": "إشاراتي المرجعية",
     "my_bookmarks_sub": "مراجعة الأسئلة المحفوظة",
     "my_errors": "أخطائي",
@@ -123,11 +132,11 @@
     "overall_success": "النجاح العام",
     "practice": "ممارسة",
     "premium_edition": "نسخة بريميوم",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "التقدم العام",
     "quiz_simulation": "محاكاة الامتحان",
     "quiz_simulation_sub": "33 سؤال • 45 دقيقة",
-    "welcome": "أهلاً بك",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "أهلاً بك"
   },
   "practice": {
     "explanation": "شرح",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "ساعتان بدون إعلانات",
     "all_questions": "الوصول إلى جميع الأسئلة",
+    "best_value": "أفضل قيمة",
     "priority_support": "دعم ذو أولوية",
     "remove_ads_forever": "إزالة الإعلانات للأبد",
-    "unlimited_sims": "محاكاة امتحان غير محدودة",
-    "best_value": "أفضل قيمة"
+    "unlimited_sims": "محاكاة امتحان غير محدودة"
   },
   "quiz": {
     "exit_confirm": "خروج",
@@ -185,11 +194,11 @@
     "failed": "فشل...",
     "failed_msg": "للأسف، لم تجتز الاختبار.",
     "home_btn": "العودة إلى الرئيسية",
+    "retake_exam": "إعادة الامتحان",
+    "retry": "حاول مجدداً",
     "review_errors": "مراجعة الأخطاء",
     "score_label": "الإجابات الصحيحة",
-    "success_msg": "لقد اجتزت اختبار الجنسية!",
-    "retry": "حاول مجدداً",
-    "retake_exam": "إعادة الامتحان"
+    "success_msg": "لقد اجتزت اختبار الجنسية!"
   },
   "review": {
     "app_bar_title": "مراجعة",

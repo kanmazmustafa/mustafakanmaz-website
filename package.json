@@ -1,6 +1,9 @@
 {
     "name": "mustafakanmaz-monorepo",
-    "packageManager": "pnpm@8.15.4",
+    "private": true,
+    "workspaces": [
+        "apps/*"
+    ],
     "scripts": {
         "build": "turbo build",
         "dev": "turbo dev",
@@ -10,7 +13,16 @@
     },
     "devDependencies": {
         "esbuild": "^0.27.2",
+        "next": "^16.1.4",
         "node-which": "^1.0.0",
         "turbo": "latest"
+    },
+    "engines": {
+        "node": "20"
+    },
+    "optionalDependencies": {
+        "@next/swc-linux-x64-gnu": "^16.1.4",
+        "@next/swc-linux-x64-musl": "^16.1.4",
+        "@next/swc-win32-x64-msvc": "^16.1.4"
     }
 }

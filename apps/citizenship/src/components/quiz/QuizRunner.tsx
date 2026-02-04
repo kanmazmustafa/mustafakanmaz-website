@@ -152,13 +152,7 @@ export default function QuizRunner() {
                     useQuizStore.setState({ currentIndex: 0 }); // Reset if out of bounds or new
                 }
             } else {
-                // Exam Mode Resume also enabled
-                const savedIndex = useUserStore.getState().lastIndices['exam_session'];
-                if (savedIndex !== undefined && savedIndex < filtered.length) {
-                    useQuizStore.setState({ currentIndex: savedIndex });
-                } else {
-                    useQuizStore.setState({ currentIndex: 0 });
-                }
+                useQuizStore.setState({ currentIndex: 0 }); // Exam always starts at 0
             }
 
             setIsLoading(false);
@@ -171,26 +165,14 @@ export default function QuizRunner() {
     useEffect(() => {
         if (mode === 'exam' || isLoading || questions.length === 0) return;
 
+        if (mode === 'exam' || isLoading || questions.length === 0) return;
+
         let resumeKey = `practice_${categoryId}`;
         if (mode === 'mistakes') resumeKey = 'mistakes';
         if (mode === 'bookmarks') resumeKey = 'bookmarks';
-        if (mode === 'exam') resumeKey = 'exam_session';
 
         setLastIndex(resumeKey, currentIndex);
     }, [currentIndex, mode, categoryId, isLoading, questions.length, setLastIndex]);
-
-    // Exit Warning: Warn user before leaving active quiz
-    useEffect(() => {
-        if (isLoading || questions.length === 0 || isFinished) return;
-
-        const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-            e.preventDefault();
-            e.returnValue = ''; // Required for Chrome
-        };
-
-        window.addEventListener('beforeunload', handleBeforeUnload);
-        return () => window.removeEventListener('beforeunload', handleBeforeUnload);
-    }, [isLoading, questions.length, isFinished]);
 
     if (isLoading) {
         return <div className="flex h-screen items-center justify-center"><Loader2 className="animate-spin" /></div>;
@@ -199,6 +181,14 @@ export default function QuizRunner() {
     if (viewState === 'result') {
         return (
             <div className="flex flex-col items-center justify-center min-h-screen bg-slate-50 py-10">
+                {!isPremium && (
+                    <AdBanner
+                        dataAdSlot="9876543210"
+                        dataAdFormat="auto"
+                        dataFullWidthResponsive={true}
+                        className="w-full max-w-lg mb-6"
+                    />
+                )}
                 <QuizResult
                     questions={questions}
                     answers={answers}
@@ -250,26 +240,8 @@ export default function QuizRunner() {
         }
     };
 
-    // FAQ Schema for SEO
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [{
-            "@type": "Question",
-            "name": currentQuestion.text,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": currentQuestion.options[currentQuestion.correctIndex]
-            }
-        }]
-    };
-
     return (
-        <div className="min-h-screen bg-slate-50 flex flex-col">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+        <div className="min-h-screen bg-slate-50 flex flex-col" style={{ zoom: "0.8" }}>
             <InterstitialOverlay
                 isVisible={showInterstitial}
                 onClose={() => {
@@ -402,7 +374,7 @@ export default function QuizRunner() {
             {!isPremium && (
                 <div className="mt-auto px-4 pb-4">
                     <AdBanner
-                        dataAdSlot={AD_CONFIG.SLOTS.QUIZ_BOTTOM_BANNER}
+                        dataAdSlot="1122334455"
                         dataAdFormat="horizontal"
                         dataFullWidthResponsive={true}
                         className="w-full max-w-2xl mx-auto"

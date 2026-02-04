@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Usuń Reklamy",
+    "select_state": "Select State",
     "select_state_placeholder": "Wybierz Region",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Witaj, {name}",
     "upgrade_caps": "PREMIUM",
-    "remove_ads": "Usuń Reklamy"
+    "welcome": "Witaj, {name}"
   },
   "disclaimer": {
     "accept": "ROZUMIEM I ZACZYNAM",
@@ -104,8 +105,15 @@
     "success": "Sukces",
     "user_profile": "Profil Użytkownika"
   },
+  "footer": {
+    "about": "O aplikacji",
+    "about_content": "Test na Obywatelstwo 2026 to kompleksowe narzędzie stworzone, aby pomóc w przygotowaniach do egzaminu na obywatelstwo niemieckie.\n\nDzięki tej aplikacji możesz przeprowadzać symulacje egzaminów, śledzić swoje błędy i zwiększyć swoje szanse na sukces.\n\nWersja: 1.0.2",
+    "about_title": "O Aplikacji",
+    "legal": "Nota Prawna"
+  },
   "home": {
     "app_title": "Test na Obywatelstwo 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Polityka w Demokracji",
       "general_test": "Test Ogólny",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Kategorie",
     "main_modes": "Główne Tryby",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Moje Zakładki",
     "my_bookmarks_sub": "Przeglądaj zapisane",
     "my_errors": "Moje Błędy",
@@ -123,11 +132,11 @@
     "overall_success": "Ogólny Sukces",
     "practice": "Ćwiczenie",
     "premium_edition": "Edycja Premium",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Ogólny Postęp",
     "quiz_simulation": "Symulacja Egzaminu",
     "quiz_simulation_sub": "33 Pytania • 45 Minut",
-    "welcome": "Witamy",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Witamy"
   },
   "practice": {
     "explanation": "Wyjaśnienie",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 godziny bez reklam",
     "all_questions": "Dostęp do wszystkich pytań",
+    "best_value": "NAJLEPSZA WARTOŚĆ",
     "priority_support": "Wsparcie priorytetowe",
     "remove_ads_forever": "Usuń reklamy na zawsze",
-    "unlimited_sims": "Nielimitowane symulacje",
-    "best_value": "NAJLEPSZA WARTOŚĆ"
+    "unlimited_sims": "Nielimitowane symulacje"
   },
   "quiz": {
     "exit_confirm": "Zakończ",
@@ -185,11 +194,11 @@
     "failed": "NIEZALICZONE...",
     "failed_msg": "Niestety, nie zdałeś.",
     "home_btn": "POWRÓT DO EKRANU GŁÓWNEGO",
+    "retake_exam": "Powtórz Egzamin",
+    "retry": "Spróbuj ponownie",
     "review_errors": "PRZEJRZYJ BŁĘDY",
     "score_label": "POPRAWNE ODPOWIEDZI",
-    "success_msg": "Zdałeś test na obywatelstwo!",
-    "retry": "Spróbuj ponownie",
-    "retake_exam": "Powtórz Egzamin"
+    "success_msg": "Zdałeś test na obywatelstwo!"
   },
   "review": {
     "app_bar_title": "Przegląd",

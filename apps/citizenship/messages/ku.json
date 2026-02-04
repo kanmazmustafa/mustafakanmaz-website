@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Bijareyên min",
+    "my_bookmarks_sub": "Pirsên tomarkirî",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Reklaman Rake",
+    "select_state": "Select State",
     "select_state_placeholder": "[MISSING] Eyalet Seçin",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Bi xêr hatî, {name}",
-    "my_bookmarks": "Bijareyên min",
-    "my_bookmarks_sub": "Pirsên tomarkirî",
     "upgrade_caps": "BILIND KIRIN",
-    "remove_ads": "Reklaman Rake"
+    "welcome": "Bi xêr hatî, {name}"
   },
   "disclaimer": {
     "accept": "FAM KIR Û DEST PÊ BIKE",
@@ -104,8 +105,15 @@
     "success": "Serkeftin",
     "user_profile": "Profîla Bikarhêner"
   },
+  "footer": {
+    "about": "Derbarê",
+    "about_content": "Citizenship Test 2026 amûrek berfireh e ku ji bo amadekirina ezmûna hevwelatiya Alman hatî sêwirandin.\n\nBi vê sepanê re, hûn dikarin simulasyonên ezmûnê bikin, şaşiyên xwe bişopînin û serkeftina xwe zêde bikin.\n\nGuherto: 1.0.2",
+    "about_title": "Derbarê sepanê",
+    "legal": "Desturên Yasayî"
+  },
   "home": {
     "app_title": "Testa Hemwelatiyê 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Siyaset di Demokrasiyê de",
       "general_test": "Testa Giştî",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Kategorî",
     "main_modes": "Modên Sereke",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Bijareyên min",
     "my_bookmarks_sub": "Pirsên tomarkirî",
     "my_errors": "Şaşiyên Min",
@@ -123,11 +132,11 @@
     "overall_success": "Serkeftina Giştî",
     "practice": "Pratîk",
     "premium_edition": "Guhertoya Premium",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Pêşveçûna Giştî",
     "quiz_simulation": "Simulasyona Ezmûnê",
     "quiz_simulation_sub": "33 Pirs • 45 Xulek",
-    "welcome": "Bi xêr hatî",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Bi xêr hatî"
   },
   "practice": {
     "explanation": "Şirove",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 saet bê reklam",
     "all_questions": "Gihîştina hemî pirsan",
+    "best_value": "BEST VALUE",
     "priority_support": "Priority Support",
     "remove_ads_forever": "Remove Ads Forever",
-    "unlimited_sims": "Unlimited Exam Simulations",
-    "best_value": "BEST VALUE"
+    "unlimited_sims": "Unlimited Exam Simulations"
   },
   "quiz": {
     "exit_confirm": "Derkeve",
@@ -185,11 +194,11 @@
     "failed": "BI SER NEKET...",
     "failed_msg": "Mixabin, tu bi ser neketî.",
     "home_btn": "VEGERE MALÊ",
+    "retake_exam": "Ezmûn dubare bike",
+    "retry": "Dîsa biceribîne",
     "review_errors": "ŞAŞIYAN BIBÎNE",
     "score_label": "BERSIVÊN RAST",
-    "success_msg": "Te testa hemwelatiyê derbas kir!",
-    "retry": "Dîsa biceribîne",
-    "retake_exam": "Ezmûn dubare bike"
+    "success_msg": "Te testa hemwelatiyê derbas kir!"
   },
   "review": {
     "app_bar_title": "Pêdaçûn",

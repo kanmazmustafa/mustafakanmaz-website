@@ -10,9 +10,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Question } from "@/types/question";
 import { SideAd } from "@/components/ads/SideAd";
-import { AdBanner } from "@/components/ads/AdBanner";
-import { AD_CONFIG } from "@/config/ads";
-import { useUserStore } from "@/store/user-store";
 
 interface QuizResultProps {
     questions: Question[];
@@ -31,7 +28,6 @@ export function QuizResult({ questions, answers, onRetry, onHome, onReview, mode
     // but plan implies we should have them.
 
     const [score, setScore] = useState(0);
-    const [displayScore, setDisplayScore] = useState(0);
     const total = questions.length;
 
     useEffect(() => {
@@ -51,30 +47,6 @@ export function QuizResult({ questions, answers, onRetry, onHome, onReview, mode
             if (selected === correctIdx) correct++;
         });
         setScore(correct);
-
-        // Animated counter for score
-        const duration = 1500; // ms
-        const startTime = Date.now();
-        const startValue = 0;
-        const endValue = Math.round((correct / total) * 100);
-
-        const animate = () => {
-            const now = Date.now();
-            const elapsed = now - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            // Ease out cubic
-            const easedProgress = 1 - Math.pow(1 - progress, 3);
-            const current = Math.floor(startValue + (endValue - startValue) * easedProgress);
-
-            setDisplayScore(current);
-
-            if (progress < 1) {
-                requestAnimationFrame(animate);
-            }
-        };
-
-        requestAnimationFrame(animate);
 
         if (correct >= 17) {
             const duration = 3 * 1000;
@@ -144,7 +116,7 @@ export function QuizResult({ questions, answers, onRetry, onHome, onReview, mode
                                 className="text-center"
                             >
                                 <span className={`text-5xl font-black tracking-tighter ${isPassed ? 'text-slate-800' : 'text-slate-800'}`}>
-                                    {displayScore}<span className="text-2xl align-top">%</span>
+                                    {Math.round((score / total) * 100)}<span className="text-2xl align-top">%</span>
                                 </span>
                             </motion.div>
                         </div>
@@ -181,18 +153,6 @@ export function QuizResult({ questions, answers, onRetry, onHome, onReview, mode
                         </div>
                     </div>
 
-                    {/* Ad Banner - Result Page */}
-                    {!useUserStore.getState().isPremium && AD_CONFIG.ENABLED.BANNER && (
-                        <div className="py-6 w-full">
-                            <AdBanner
-                                dataAdSlot={AD_CONFIG.SLOTS.RESULT_BANNER}
-                                dataAdFormat="auto"
-                                dataFullWidthResponsive={true}
-                                className="w-full overflow-hidden rounded-xl border border-slate-100 shadow-sm"
-                            />
-                        </div>
-                    )}
-
                     {/* Actions */}
                     <div className="space-y-3">
                         {score < total && (
@@ -209,7 +169,7 @@ export function QuizResult({ questions, answers, onRetry, onHome, onReview, mode
                             className="w-full h-14 text-base font-bold rounded-xl bg-slate-900 hover:bg-slate-800 shadow-xl shadow-slate-900/10 transition-transform active:scale-95"
                             onClick={onRetry}
                         >
-                            <RotateCcw className="mr-2 h-5 w-5" /> {mode === 'exam' ? t('retake_exam') : t('retry')}
+                            <RotateCcw className="mr-2 h-5 w-5" /> {mode === 'exam' ? (t('retake_exam') || 'Retake Exam') : (t('retry') || 'Try Again')}
                         </Button>
 
                         <Button

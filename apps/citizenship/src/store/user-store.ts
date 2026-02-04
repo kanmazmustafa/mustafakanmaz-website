@@ -19,7 +19,6 @@ interface UserState {
     bookmarks: number[]; // Array of bookmarked question IDs
     dailyStreak: number;
     lastVisitDate: string | null;
-    updatedAt: number;
 
     setSelectedState: (state: string) => void;
     setSelectedLanguage: (lang: string) => void;
@@ -34,7 +33,6 @@ interface UserState {
     setSyncStatus: (syncing: boolean, timestamp?: number) => void;
     setHydrated: () => void;
     setAllData: (data: Partial<UserState>) => void;
-    mergeData: (data: Partial<UserState>) => void;
     updateInterstitialTime: () => void;
     clearMistakes: () => void;
     setLastIndex: (key: string, index: number) => void;
@@ -63,12 +61,11 @@ export const useUserStore = create<UserState>()(
             bookmarks: [],
             dailyStreak: 0,
             lastVisitDate: null,
-            updatedAt: 0,
 
-            setSelectedState: (state) => set({ selectedState: state, updatedAt: Date.now() }),
-            setSelectedLanguage: (lang) => set({ selectedLanguage: lang, updatedAt: Date.now() }),
-            setProgress: (progress) => set({ progress, updatedAt: Date.now() }),
-            setPremium: (isPremium) => set({ isPremium, updatedAt: Date.now() }),
+            setSelectedState: (state) => set({ selectedState: state }),
+            setSelectedLanguage: (lang) => set({ selectedLanguage: lang }),
+            setProgress: (progress) => set({ progress }),
+            setPremium: (isPremium) => set({ isPremium }),
 
             addMistakes: (ids) => set((state) => {
                 const newMistakes = new Set([...state.mistakes, ...ids]);
@@ -76,14 +73,12 @@ export const useUserStore = create<UserState>()(
                 const newMastered = state.mastered.filter(id => !ids.includes(id));
                 return {
                     mistakes: Array.from(newMistakes),
-                    mastered: newMastered,
-                    updatedAt: Date.now()
+                    mastered: newMastered
                 };
             }),
 
             removeMistake: (id) => set((state) => ({
-                mistakes: state.mistakes.filter((m) => m !== id),
-                updatedAt: Date.now()
+                mistakes: state.mistakes.filter((m) => m !== id)
             })),
 
             addMastered: (ids) => set((state) => {
@@ -92,48 +87,27 @@ export const useUserStore = create<UserState>()(
                 const newMistakes = state.mistakes.filter(id => !ids.includes(id));
                 return {
                     mastered: Array.from(newMastered),
-                    mistakes: newMistakes,
-                    updatedAt: Date.now()
+                    mistakes: newMistakes
                 };
             }),
 
             removeMastered: (id) => set((state) => ({
-                mastered: state.mastered.filter((m) => m !== id),
-                updatedAt: Date.now()
+                mastered: state.mastered.filter((m) => m !== id)
             })),
             setRewarded: (hours) => set({
-                rewardedUntil: Date.now() + (hours * 60 * 60 * 1000),
-                updatedAt: Date.now()
+                rewardedUntil: Date.now() + (hours * 60 * 60 * 1000)
             }),
-            setAcceptedDisclaimer: (accepted) => set({ hasAcceptedDisclaimer: accepted, updatedAt: Date.now() }),
+            setAcceptedDisclaimer: (accepted) => set({ hasAcceptedDisclaimer: accepted }),
             setSyncStatus: (syncing, timestamp) => set({
                 isSyncing: syncing,
                 ...(timestamp && { lastSynced: timestamp })
             }),
             setHydrated: () => set({ isHydrated: true }),
-            setAllData: (data) => set((state) => ({ ...state, ...data, updatedAt: data.updatedAt || Date.now() })),
-            mergeData: (incoming) => set((state) => {
-                const mergeArray = (local: number[], remote: any) => {
-                    if (!Array.isArray(remote)) return local;
-                    return Array.from(new Set([...local, ...remote]));
-                };
-
-                return {
-                    ...state,
-                    ...incoming, // Start with incoming as base for single values
-                    mistakes: mergeArray(state.mistakes, incoming.mistakes),
-                    mastered: mergeArray(state.mastered, incoming.mastered),
-                    bookmarks: mergeArray(state.bookmarks, incoming.bookmarks),
-                    // For single values, if local is newer, keep local (though usually cloud is base)
-                    updatedAt: Math.max(state.updatedAt, incoming.updatedAt || 0, Date.now()),
-                    isPremium: state.isPremium || incoming.isPremium || false,
-                };
-            }),
+            setAllData: (data) => set((state) => ({ ...state, ...data })),
             updateInterstitialTime: () => set({ lastInterstitialTime: Date.now() }),
-            clearMistakes: () => set({ mistakes: [], updatedAt: Date.now() }),
+            clearMistakes: () => set({ mistakes: [] }),
             setLastIndex: (key, index) => set((state) => ({
-                lastIndices: { ...state.lastIndices, [key]: index },
-                updatedAt: Date.now()
+                lastIndices: { ...state.lastIndices, [key]: index }
             })),
             recordStreak: (questionId, isCorrect) => {
                 const state = get();
@@ -148,15 +122,13 @@ export const useUserStore = create<UserState>()(
                             mistakes: state.mistakes.filter(id => id !== questionId),
                             mastered: state.mastered.includes(questionId)
                                 ? state.mastered
-                                : [...state.mastered, questionId],
-                            updatedAt: Date.now()
+                                : [...state.mastered, questionId]
                         });
                         return { mastered: true };
                     } else {
                         // Increment streak
                         set({
-                            streaks: { ...state.streaks, [questionId]: newStreak },
-                            updatedAt: Date.now()
+                            streaks: { ...state.streaks, [questionId]: newStreak }
                         });
                         return { mastered: false };
                     }
@@ -167,8 +139,7 @@ export const useUserStore = create<UserState>()(
                         mistakes: state.mistakes.includes(questionId)
                             ? state.mistakes
                             : [...state.mistakes, questionId],
-                        mastered: state.mastered.filter(id => id !== questionId),
-                        updatedAt: Date.now()
+                        mastered: state.mastered.filter(id => id !== questionId)
                     });
                     return { mastered: false };
                 }
@@ -176,8 +147,7 @@ export const useUserStore = create<UserState>()(
             toggleBookmark: (questionId) => set((state) => ({
                 bookmarks: state.bookmarks.includes(questionId)
                     ? state.bookmarks.filter(id => id !== questionId)
-                    : [...state.bookmarks, questionId],
-                updatedAt: Date.now()
+                    : [...state.bookmarks, questionId]
             })),
 
             // Daily Streak Logic

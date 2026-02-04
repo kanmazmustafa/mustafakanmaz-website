@@ -3,8 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 export default function EinbuergerungstestPage() {
+    const params = useParams();
+    const locale = params?.locale || 'tr';
+
     return (
         <main className="min-h-screen bg-background text-foreground selection:bg-amber-500/30 overflow-hidden transition-colors duration-300">
             {/* Premium Background Elements */}
@@ -63,8 +67,8 @@ export default function EinbuergerungstestPage() {
                                 </div>
                             </Link>
 
-                            <Link
-                                href="/einbuergerungstest/app"
+                            <a
+                                href={`/einbuergerungstest/app${locale === 'en' ? '' : '/' + locale}`}
                                 className="group px-10 py-5 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-2xl font-black hover:bg-amber-500/20 transition-all flex items-center gap-4 hover:scale-[1.02]"
                             >
                                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
@@ -72,7 +76,7 @@ export default function EinbuergerungstestPage() {
                                     <div className="text-[10px] uppercase tracking-widest opacity-60">Access link</div>
                                     <div className="text-lg leading-none">Web App</div>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
@@ -111,6 +115,37 @@ export default function EinbuergerungstestPage() {
                             <p className="text-slate-400 leading-relaxed font-light">{feature.desc}</p>
                         </motion.div>
                     ))}
+                </div>
+            </section>
+
+            {/* Content Enrichment for AdSense */}
+            <section className="py-24 container-wide">
+                <div className="max-w-4xl mx-auto space-y-16">
+                    <div>
+                        <h2 className="text-4xl font-black mb-6 tracking-tight">Understanding the German Citizenship Test</h2>
+                        <p className="text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+                            The "Leben in Deutschland" test is a mandatory examination for most applicants seeking naturalization in Germany. It assesses your knowledge of the country's legal and social order, as well as living conditions in Germany. To pass, you must answer at least 17 out of 33 questions correctly within 60 minutes.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 className="text-4xl font-black mb-6 tracking-tight">Why Choose Our Platform?</h2>
+                        <p className="text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-light mb-6">
+                            Preparing for the exam requires more than just memorizing answers. Our platform offers a comprehensive study experience featuring:
+                        </p>
+                        <ul className="list-disc pl-6 space-y-4 text-slate-500 dark:text-slate-400 font-light text-lg">
+                            <li><strong className="text-foreground font-medium">Official Question Bank:</strong> Access all 300 general questions and 10 state-specific questions for every federal state (Bundesland).</li>
+                            <li><strong className="text-foreground font-medium">Multi-Language Support:</strong> View questions in German, Turkish, English, Arabic, and Russian to better understand complex terminology.</li>
+                            <li><strong className="text-foreground font-medium">Smart Analytics:</strong> Our system tracks your progress and highlights weak areas, ensuring efficient preparation.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 className="text-4xl font-black mb-6 tracking-tight">Exam Structure & Tips</h2>
+                        <p className="text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+                            The exam consists of 33 multiple-choice questions. 30 questions cover core topics like "Living in a Democracy", "History and Responsibility", and "People and Society". The remaining 3 questions are specific to the federal state where you reside. Regular practice with our simulation mode helps you get comfortable with the format and time constraints.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -177,6 +212,7 @@ export default function EinbuergerungstestPage() {
                 <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-6">
                     <span>© 2026 Mustafa Kanmaz</span>
                     <div className="flex gap-8">
+                        <Link href="/einbuergerungstest/impressum" className="hover:text-white transition-colors">Impressum</Link>
                         <Link href="/einbuergerungstest/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
                         <Link href="/projects" className="hover:text-white transition-colors">More Projects</Link>
                     </div>

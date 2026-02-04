@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "ブックマーク",
+    "my_bookmarks_sub": "保存された質問",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "広告を削除",
+    "select_state": "Select State",
     "select_state_placeholder": "州を選択",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "ようこそ、{name}",
-    "my_bookmarks": "ブックマーク",
-    "my_bookmarks_sub": "保存された質問",
     "upgrade_caps": "アップグレード",
-    "remove_ads": "広告を削除"
+    "welcome": "ようこそ、{name}"
   },
   "disclaimer": {
     "accept": "理解して開始",
@@ -104,8 +105,15 @@
     "success": "成功",
     "user_profile": "ユーザープロフィール"
   },
+  "footer": {
+    "about": "アプリについて",
+    "about_content": "Citizenship Test 2026は、ドイツ市民権試験の準備のために設計された包括的なツールです。\n\nこのアプリを使用すると、試験シミュレーションを実行し、間違いを追跡し、合格率を高めることができます。\n\nバージョン：1.0.2",
+    "about_title": "アプリについて",
+    "legal": "法的免責事項"
+  },
   "home": {
     "app_title": "市民権テスト 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "民主主義における政治",
       "general_test": "一般テスト",
@@ -115,6 +123,7 @@
     },
     "categories_label": "カテゴリー",
     "main_modes": "メインモード",
+    "mistakes": "Mistakes",
     "my_bookmarks": "ブックマーク",
     "my_bookmarks_sub": "保存された質問",
     "my_errors": "私の間違い",
@@ -123,11 +132,11 @@
     "overall_success": "総合成功率",
     "practice": "練習",
     "premium_edition": "プレミアム版",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "全体的な進捗",
     "quiz_simulation": "試験シミュレーション",
     "quiz_simulation_sub": "33問 • 45分",
-    "welcome": "ようこそ",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "ようこそ"
   },
   "practice": {
     "explanation": "解説",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2時間広告なし",
     "all_questions": "すべての質問にアクセス",
+    "best_value": "ベストバリュー",
     "priority_support": "優先サポート",
     "remove_ads_forever": "広告を完全に削除",
-    "unlimited_sims": "無制限のシミュレーション",
-    "best_value": "ベストバリュー"
+    "unlimited_sims": "無制限のシミュレーション"
   },
   "quiz": {
     "exit_confirm": "終了",
@@ -185,11 +194,11 @@
     "failed": "不合格...",
     "failed_msg": "残念ながら、不合格です。",
     "home_btn": "ホームに戻る",
+    "retake_exam": "試験を再受験",
+    "retry": "再試行",
     "review_errors": "間違いを見直す",
     "score_label": "正解数",
-    "success_msg": "市民権テストに合格しました！",
-    "retry": "再試行",
-    "retake_exam": "試験を再受験"
+    "success_msg": "市民権テストに合格しました！"
   },
   "review": {
     "app_bar_title": "見直し",

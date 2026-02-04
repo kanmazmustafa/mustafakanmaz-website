@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { submitContactForm } from '@/app/actions/contact';
+import { submitContactForm } from '../../app/actions/contact';
 
 type Selection = 'none' | 'architecture' | 'energy';
 

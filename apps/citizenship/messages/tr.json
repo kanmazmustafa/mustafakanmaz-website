@@ -73,9 +73,10 @@
     "practice_mode": "Pratik Yap",
     "practice_mode_desc": "Kendi hızında öğren",
     "practice_mode_detail": "Tüm 300+ soruyu kategorilere göre incele.",
-    "practice_mode_detail": "Tüm 300+ soruyu kategorilere göre incele.",
+    "privacy_notice": "{name} gizliliğinize önem verir. Hesabınızı ve ilgili tüm verileri istediğiniz zaman kalıcı olarak silebilirsiniz.",
     "select_state_placeholder": "Eyalet Seçin",
     "selected_state": "Seçili Eyalet",
+    "select_state": "Eyalet Seçin",
     "start_exam": "Sınava Başla",
     "start_practice": "Pratiğe Başla",
     "stats": "İstatistikler",
@@ -84,8 +85,7 @@
     "success_rate": "Başarı Oranı",
     "welcome": "Hoş geldin, {name}",
     "upgrade_caps": "YÜKSELT",
-    "remove_ads": "Reklamları Kaldır",
-    "privacy_notice": "{name} gizliliğinize önem verir. Hesabınızı ve ilgili tüm verileri istediğiniz zaman kalıcı olarak silebilirsiniz."
+    "remove_ads": "Reklamları Kaldır"
   },
   "disclaimer": {
     "accept": "ANLADIM & BAŞLA",
@@ -105,6 +105,12 @@
     "success": "Başarı",
     "user_profile": "Kullanıcı Profili"
   },
+  "footer": {
+    "about": "Hakkında",
+    "about_title": "Uygulama Hakkında",
+    "about_content": "Vatandaşlık Testi 2026, Almanya vatandaşlık sınavına hazırlananlar için geliştirilmiş kapsamlı bir yardımcı araçtır.\n\nBu uygulama ile sınav simülasyonları yapabilir, eksiklerinizi görebilir ve başarınızı artırabilirsiniz.\n\nSürüm: 1.0.2",
+    "legal": "Yasal Uyarı"
+  },
   "home": {
     "app_title": "Vatandaşlık Testi 2026",
     "categories": {
@@ -116,6 +122,8 @@
     },
     "categories_label": "Kategoriler",
     "main_modes": "Ana Modlar",
+    "mistakes": "Hatalarım",
+    "bookmarks": "Favorilerim",
     "my_bookmarks": "Favorilerim",
     "my_bookmarks_sub": "Kaydettiğin soruları tekrar et",
     "my_errors": "Hatalarım",

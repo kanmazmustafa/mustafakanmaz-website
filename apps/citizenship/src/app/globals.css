@@ -38,6 +38,8 @@
 }
 
 :root {
+  font-size: 13px;
+  /* Scales entire UI down (13/16 = ~81%) */
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
   --card: 0 0% 100%;
@@ -87,6 +89,11 @@ body {
   font-family: var(--font-jakarta), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-outfit), sans-serif;
 }

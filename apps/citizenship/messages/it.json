@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} tiene alla tua privacy. Puoi eliminare il tuo account.",
+    "remove_ads": "Rimuovi Pubblicità",
+    "select_state": "Select State",
     "select_state_placeholder": "Seleziona Stato",
     "selected_state": "Stato selezionato",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Benvenuto, {name}",
     "upgrade_caps": "AGGIORNA",
-    "remove_ads": "Rimuovi Pubblicità"
+    "welcome": "Benvenuto, {name}"
   },
   "disclaimer": {
     "accept": "CAPITO E INIZIA",
@@ -104,8 +105,15 @@
     "success": "Successo",
     "user_profile": "Profilo Utente"
   },
+  "footer": {
+    "about": "Info",
+    "about_content": "Citizenship Test 2026 è uno strumento completo progettato per chi si prepara all'esame di cittadinanza tedesca.\n\nCon questa app, puoi eseguire simulazioni d'esame, tracciare i tuoi errori e aumentare il tuo successo.\n\nVersione: 1.0.2",
+    "about_title": "Informazioni sull'App",
+    "legal": "Note Legali"
+  },
   "home": {
     "app_title": "Test di Cittadinanza 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politica nella Democrazia",
       "general_test": "Test Generale",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Categorie",
     "main_modes": "Modalità Principali",
+    "mistakes": "Mistakes",
     "my_bookmarks": "I Miei Preferiti",
     "my_bookmarks_sub": "Rivedi salvati",
     "my_errors": "I Miei Errori",
@@ -123,11 +132,11 @@
     "overall_success": "Successo Generale",
     "practice": "Pratica",
     "premium_edition": "Edizione Premium",
+    "privacy_notice": "{name} tiene alla tua privacy. Puoi eliminare il tuo account.",
     "progress_card_title": "Progresso Generale",
     "quiz_simulation": "Simulazione Esame",
     "quiz_simulation_sub": "33 Domande • 45 Minuti",
-    "welcome": "Benvenuto",
-    "privacy_notice": "{name} tiene alla tua privacy. Puoi eliminare il tuo account."
+    "welcome": "Benvenuto"
   },
   "practice": {
     "explanation": "Spiegazione",
@@ -162,11 +171,11 @@
   "premium_features": {
     "ad_free_2h": "2 Ore Senza Pubblicità",
     "all_questions": "Accesso a tutte le domande",
+    "best_value": "MIGLIOR VALORE",
     "priority_support": "Supporto prioritario",
     "remove_ads_forever": "Rimuovi pubblicità per sempre",
     "unlimited_sims": "Simulazioni illimitate",
-    "unlock_potential": "Sblocca il tuo potenziale.",
-    "best_value": "MIGLIOR VALORE"
+    "unlock_potential": "Sblocca il tuo potenziale."
   },
   "quiz": {
     "exit_confirm": "Esci",
@@ -186,11 +195,11 @@
     "failed": "FALLITO...",
     "failed_msg": "Sfortunatamente, non hai superato.",
     "home_btn": "TORNA ALLA HOME",
+    "retake_exam": "Ripeti Esame",
+    "retry": "Riprova",
     "review_errors": "RIVEDI ERRORI",
     "score_label": "RISPOSTE CORRETTE",
-    "success_msg": "Hai superato il test di cittadinanza!",
-    "retry": "Riprova",
-    "retake_exam": "Ripeti Esame"
+    "success_msg": "Hai superato il test di cittadinanza!"
   },
   "review": {
     "app_bar_title": "Revisione",

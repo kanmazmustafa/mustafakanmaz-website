@@ -55,10 +55,11 @@ export default function RootLayout({
                 />
             </head>
             <Script
-                async
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7011720768538565"
-                crossOrigin="anonymous"
-                strategy="afterInteractive"
+                {...({
+                    src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7011720768538565",
+                    crossOrigin: "anonymous",
+                    strategy: "afterInteractive"
+                } as any)}
             />
             <body className={`${inter.variable} ${robotoMono.variable} ${playfair.variable} bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white`}>
                 <ThemeProvider>

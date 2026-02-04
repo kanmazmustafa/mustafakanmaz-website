@@ -13,10 +13,11 @@ import {
     DialogTrigger
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { AlertTriangle, Trash2, Loader2 } from "lucide-react";
+import { Trash2, Loader2, UserX } from "lucide-react";
 
 export function DeleteAccountDialog() {
     const t = useTranslations('auth');
+    const tCommon = useTranslations('common');
     const { deleteAccount } = useAuth();
     const [isOpen, setIsOpen] = useState(false);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -42,54 +43,54 @@ export function DeleteAccountDialog() {
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
             <DialogTrigger asChild>
-                <Button
-                    variant="ghost"
-                    className="text-slate-400 hover:text-red-500 hover:bg-red-50 transition-colors gap-2 text-xs"
-                >
-                    <Trash2 size={14} />
-                    {t('delete_account')}
+                <Button variant="ghost" className="w-full justify-start gap-4 h-12 px-2 hover:bg-red-500/10 text-slate-300 hover:text-red-400 rounded-xl transition-all group">
+                    <div className="h-9 w-9 bg-red-500/10 rounded-xl flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-all">
+                        <Trash2 size={18} />
+                    </div>
+                    <span className="font-semibold text-sm">{t('delete_account')}</span>
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px] rounded-3xl border-none shadow-2xl">
+            <DialogContent className="sm:max-w-[425px] rounded-3xl border-none shadow-2xl bg-slate-900 text-white">
                 <DialogHeader className="items-center text-center">
-                    <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                        <AlertTriangle className="text-red-600" size={32} />
+                    <div className="w-12 h-12 bg-red-500/20 rounded-2xl flex items-center justify-center mb-4">
+                        <UserX className="text-red-500" size={24} />
                     </div>
-                    <DialogTitle className="text-2xl font-bold text-slate-900">
+                    <DialogTitle className="text-xl font-bold text-white uppercase tracking-tight">
                         {t('delete_confirm_title')}
                     </DialogTitle>
-                    <DialogDescription className="text-slate-500 pt-2 leading-relaxed">
+                    <DialogDescription className="text-slate-400 text-sm mt-2">
                         {t('delete_confirm_body')}
                     </DialogDescription>
                 </DialogHeader>
 
                 {error && (
-                    <div className="bg-red-50 text-red-600 p-3 rounded-xl text-sm border border-red-100 mt-2">
+                    <div className="bg-red-500/10 text-red-400 p-3 rounded-xl text-sm border border-red-500/20 mt-2">
                         {error}
                     </div>
                 )}
 
-                <DialogFooter className="flex flex-col sm:flex-row gap-3 mt-6">
+                <div className="bg-red-500/5 border border-red-500/10 rounded-2xl p-4 my-2">
+                    <p className="text-xs text-red-400/80 leading-relaxed text-center font-medium">
+                        Bu işlem geri alınamaz. Hesabınıza bağlı tüm çalışma verileri ve premium status kalıcı olarak silinecektir.
+                    </p>
+                </div>
+
+                <DialogFooter className="flex gap-3 mt-4">
                     <Button
-                        variant="outline"
+                        variant="ghost"
+                        className="flex-1 h-12 rounded-xl border border-white/5 hover:bg-white/5 text-slate-400"
                         onClick={() => setIsOpen(false)}
-                        className="rounded-xl border-slate-200 text-slate-600 hover:bg-slate-50 font-semibold flex-1 order-2 sm:order-1"
                         disabled={isDeleting}
                     >
-                        {useTranslations('common')('cancel')}
+                        {tCommon('cancel')}
                     </Button>
                     <Button
                         variant="destructive"
+                        className="flex-1 h-12 rounded-xl bg-red-500 hover:bg-red-600 text-white font-bold shadow-lg shadow-red-900/30"
                         onClick={handleDelete}
-                        className="rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold flex-1 order-1 sm:order-2 h-11"
                         disabled={isDeleting}
                     >
-                        {isDeleting ? (
-                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        ) : (
-                            <Trash2 className="mr-2 h-4 w-4" />
-                        )}
-                        {t('delete_btn')}
+                        {isDeleting ? <Loader2 className="h-4 w-4 animate-spin" /> : t('delete_btn')}
                     </Button>
                 </DialogFooter>
             </DialogContent>

@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Marcajele mele",
+    "my_bookmarks_sub": "Revizuire salvate",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Elimină Reclamele",
+    "select_state": "Select State",
     "select_state_placeholder": "Selectați statul",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Bun venit, {name}",
-    "my_bookmarks": "Marcajele mele",
-    "my_bookmarks_sub": "Revizuire salvate",
     "upgrade_caps": "PREMIUM",
-    "remove_ads": "Elimină Reclamele"
+    "welcome": "Bun venit, {name}"
   },
   "disclaimer": {
     "accept": "AM ÎNȚELES & ÎNCEPE",
@@ -104,8 +105,15 @@
     "success": "Succes",
     "user_profile": "Profil Utilizator"
   },
+  "footer": {
+    "about": "Despre",
+    "about_content": "Citizenship Test 2026 este un instrument complet conceput pentru pregătirea examenului de cetățenie germană.\n\nCu această aplicație, puteți rula simulări de examen, urmări greșelile și crește succesul.\n\nVersiune: 1.0.2",
+    "about_title": "Despre Aplicație",
+    "legal": "Mențiune Legală"
+  },
   "home": {
     "app_title": "Test de Cetățenie 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politică în Democrație",
       "general_test": "Test General",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Categorii",
     "main_modes": "Moduri Principale",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Marcajele mele",
     "my_bookmarks_sub": "Revizuire salvate",
     "my_errors": "Greșelile Mele",
@@ -123,11 +132,11 @@
     "overall_success": "Succes General",
     "practice": "Practică",
     "premium_edition": "Ediția Premium",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Progres General",
     "quiz_simulation": "Simulare Examen",
     "quiz_simulation_sub": "33 Întrebări • 45 Minute",
-    "welcome": "Bine ați venit",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Bine ați venit"
   },
   "practice": {
     "explanation": "Explicație",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 ore fără reclame",
     "all_questions": "Acces la toate întrebările",
+    "best_value": "CEA MAI BUNĂ VALOARE",
     "priority_support": "Suport prioritar",
     "remove_ads_forever": "Eliminați reclamele",
-    "unlimited_sims": "Simulări nelimitate",
-    "best_value": "CEA MAI BUNĂ VALOARE"
+    "unlimited_sims": "Simulări nelimitate"
   },
   "quiz": {
     "exit_confirm": "Ieși",
@@ -185,11 +194,11 @@
     "failed": "EȘUAT...",
     "failed_msg": "Din păcate, nu ați trecut.",
     "home_btn": "ÎNAPOI ACASĂ",
+    "retake_exam": "Reia examenul",
+    "retry": "Încearcă din nou",
     "review_errors": "REVIZUIEȘTE GREȘELILE",
     "score_label": "RĂSPUNSURI CORECTE",
-    "success_msg": "Ați trecut testul de cetățenie!",
-    "retry": "Încearcă din nou",
-    "retake_exam": "Reia examenul"
+    "success_msg": "Ați trecut testul de cetățenie!"
   },
   "review": {
     "app_bar_title": "Revizuire",

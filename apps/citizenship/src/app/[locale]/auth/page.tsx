@@ -10,8 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Loader2, ArrowLeft } from "lucide-react";
-import { mapAuthCodeToKey } from "@/lib/auth-errors";
+import { Loader2 } from "lucide-react";
 
 export default function AuthPage() {
     const t = useTranslations('auth'); // Assuming 'auth' translations exist
@@ -41,7 +40,7 @@ export default function AuthPage() {
             router.push('/');
         } catch (e: any) {
             console.error(e);
-            setError(t(mapAuthCodeToKey(e.code)));
+            setError(e.message);
         } finally {
             setIsLoading(false);
         }
@@ -57,7 +56,7 @@ export default function AuthPage() {
             router.push('/');
         } catch (e: any) {
             console.error(e);
-            setError(t(mapAuthCodeToKey(e.code)));
+            setError(e.message);
         } finally {
             setIsLoading(false);
         }
@@ -85,22 +84,15 @@ export default function AuthPage() {
             router.push('/');
         } catch (e: any) {
             console.error(e);
-            setError(t(mapAuthCodeToKey(e.code)));
+            // Simple error mapping (in a real app, use t(error.code))
+            setError(e.message);
         } finally {
             setIsLoading(false);
         }
     };
 
     return (
-        <div className="flex h-screen w-full items-center justify-center bg-gray-50 p-4 relative">
-            <Button
-                variant="ghost"
-                className="absolute top-8 left-8 text-slate-500 hover:text-slate-800"
-                onClick={() => router.push('/')}
-            >
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                {t('back_to_home') || "Geri Dön"}
-            </Button>
+        <div className="flex h-screen w-full items-center justify-center bg-gray-50 p-4">
             <Card className="w-full max-w-md">
                 <CardHeader className="text-center">
                     <CardTitle className="text-2xl font-bold">{t('login_title')}</CardTitle>

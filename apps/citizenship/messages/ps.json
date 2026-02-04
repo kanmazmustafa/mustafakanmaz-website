@@ -72,6 +72,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Remove Ads",
+    "select_state": "Select State",
     "select_state_placeholder": "[MISSING] Eyalet Seçin",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,6 +82,7 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
+    "upgrade_caps": "Upgrade Caps",
     "welcome": "Welcome, {name}"
   },
   "disclaimer": {
@@ -100,8 +103,15 @@
     "success": "بریا",
     "user_profile": "د کارونکي پروفایل"
   },
+  "footer": {
+    "about": "د په اړه",
+    "about_content": "د تابعیت ازموینه 2026 یوه جامع وسیله ده چې د آلمان د تابعیت ازموینې لپاره چمتو شوي.\n\nد دې اپلیکیشن سره، تاسو کولی شئ د ازموینې سمولونه ترسره کړئ، خپلې تېروتنې تعقیب کړئ او خپله بریا زیاته کړئ.\n\nنسخه: 1.0.2",
+    "about_title": "د غوښتنلیک په اړه",
+    "legal": "قانوني اعلامیه"
+  },
   "home": {
     "app_title": "د تابعیت ازموینه 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "په ډیموکراسۍ کې سیاست",
       "general_test": "عمومي ازموینه",
@@ -111,6 +121,7 @@
     },
     "categories_label": "وېشنیزې",
     "main_modes": "اصلي حالتونه",
+    "mistakes": "Mistakes",
     "my_bookmarks": "My Bookmarks",
     "my_bookmarks_sub": "Review saved questions",
     "my_errors": "زما تېروتنې",
@@ -119,11 +130,11 @@
     "overall_success": "عمومي بریا",
     "practice": "تمرین",
     "premium_edition": "Premium Edition",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "عمومي پرمختګ",
     "quiz_simulation": "د ازموینې سمولیشن",
     "quiz_simulation_sub": "33 پوښتنې • 45 دقیقې",
-    "welcome": "ښه راغلاست",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "ښه راغلاست"
   },
   "practice": {
     "explanation": "تشریح",
@@ -180,6 +191,8 @@
     "failed": "ناکام شو...",
     "failed_msg": "له بده مرغه، تاسو بریالي نشوید.",
     "home_btn": "کور ته راستنیدل",
+    "retake_exam": "Retake Exam",
+    "retry": "Retry",
     "review_errors": "تېروتنې بیاکتنه کړئ",
     "score_label": "سم ځوابونه",
     "success_msg": "تاسو د تابعیت ازموینه تیره کړه!"

@@ -1,13 +1,73 @@
 {
-    "hosting": {
-        "source": "apps/portfolio",
-        "ignore": [
-            "firebase.json",
-            "**/.*",
-            "**/node_modules/**"
-        ],
-        "frameworksBackend": {
-            "region": "europe-west1"
+    "hosting": [
+        {
+            "target": "portfolio",
+            "source": "apps/portfolio",
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ],
+            "frameworksBackend": {
+                "region": "europe-west1"
+            },
+            "redirects": [
+                {
+                    "source": "/:locale(ar|bg|bs|de|el|en|es|fa|fr|he|hi|hr|hu|it|ja|ku|nl|pl|ps|pt|ro|ru|sq|sr|th|tr|uk|vi|zh)/einbuergerungstest/app",
+                    "destination": "/einbuergerungstest/app/:locale",
+                    "type": 301
+                },
+                {
+                    "source": "/:locale(ar|bg|bs|de|el|en|es|fa|fr|he|hi|hr|hu|it|ja|ku|nl|pl|ps|pt|ro|ru|sq|sr|th|tr|uk|vi|zh)/einbuergerungstest/app/:path*",
+                    "destination": "/einbuergerungstest/app/:locale/:path*",
+                    "type": 301
+                }
+            ],
+            "rewrites": [
+                {
+                    "source": "/einbuergerungstest/app",
+                    "run": {
+                        "serviceId": "ssrmustafakanmazcitizen",
+                        "region": "europe-west1"
+                    }
+                },
+                {
+                    "source": "/einbuergerungstest/app/**",
+                    "run": {
+                        "serviceId": "ssrmustafakanmazcitizen",
+                        "region": "europe-west1"
+                    }
+                },
+                {
+                    "source": "**",
+                    "function": "ssrmustafakanmazcom"
+                }
+            ]
+        },
+        {
+            "target": "citizenship",
+            "source": "apps/citizenship",
+            "ignore": [
+                "firebase.json",
+                "**/.*",
+                "**/node_modules/**"
+            ],
+            "frameworksBackend": {
+                "region": "europe-west1"
+            },
+            "redirects": [
+                {
+                    "source": "/",
+                    "destination": "/einbuergerungstest/app",
+                    "type": 302
+                }
+            ],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "function": "ssrmustafakanmazcitizen"
+                }
+            ]
         }
-    }
+    ]
 }

@@ -3,8 +3,9 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { AuthProvider } from '@/context/AuthContext';
+import { SyncManager } from '@/components/auth/SyncManager';
 import { AdSense } from '@/components/ads/AdSense';
-import { ClientSideProviders } from '@/components/providers/ClientSideProviders';
+import { DisclaimerOverlay } from '@/components/common/DisclaimerOverlay';
 
 import { Outfit, Plus_Jakarta_Sans } from 'next/font/google';
 import "../globals.css";
@@ -41,7 +42,8 @@ export default async function LocaleLayout({
                 <AdSense pId={process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || ""} />
                 <NextIntlClientProvider messages={messages}>
                     <AuthProvider>
-                        <ClientSideProviders />
+                        <SyncManager />
+                        <DisclaimerOverlay />
                         {children}
                     </AuthProvider>
                 </NextIntlClientProvider>

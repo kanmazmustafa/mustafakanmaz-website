@@ -4,8 +4,6 @@ import { useEffect, useRef } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useUserStore } from "@/store/user-store";
 import { uploadUserData, downloadUserData, SyncData } from "@/lib/sync-service";
-import { doc, onSnapshot } from "firebase/firestore";
-import { db } from "@/lib/firebase";
 
 export function SyncManager() {
     const { user } = useAuth();
@@ -21,20 +19,12 @@ export function SyncManager() {
         const performInitialFetch = async () => {
             setSyncStatus(true);
             try {
-                const cloudData = await downloadUserData(user.uid) as SyncData | null;
+                const cloudData = await downloadUserData(user.uid);
                 if (cloudData) {
-                    const localUpdatedAt = store.updatedAt || 0;
-                    const cloudUpdatedAt = cloudData.updatedAt || 0;
-
-                    if (cloudUpdatedAt > localUpdatedAt) {
-                        console.log("SyncManager: Cloud data found, merging...");
-                        store.mergeData(cloudData);
-                    } else if (cloudUpdatedAt < localUpdatedAt) {
-                        console.log("SyncManager: Local data is newer, scheduling upload...");
-                        // This will be caught by the second effect
-                    } else {
-                        console.log("SyncManager: Data is in sync.");
-                    }
+                    console.log("SyncManager: Cloud data found, merging...");
+                    // Merge logic: Simple merge for now
+                    // In a real app, you might compare timestamps
+                    setAllData(cloudData);
                 }
                 initialFetchDone.current = true;
                 setSyncStatus(false, Date.now());
@@ -59,11 +49,10 @@ export function SyncManager() {
             selectedLanguage: store.selectedLanguage,
             rewardedUntil: store.rewardedUntil,
             hasAcceptedDisclaimer: store.hasAcceptedDisclaimer,
-            // REMOVED: isPremium - MUST NOT BE SYNCED FROM CLIENT
+            isPremium: store.isPremium,
             lastIndices: store.lastIndices,
             streaks: store.streaks,
             bookmarks: store.bookmarks,
-            updatedAt: store.updatedAt,
         };
 
         const dataString = JSON.stringify(dataToSync);
@@ -94,26 +83,9 @@ export function SyncManager() {
         store.selectedLanguage,
         store.rewardedUntil,
         store.hasAcceptedDisclaimer,
+        store.isPremium,
         setSyncStatus
     ]);
-
-    // 3. Authority Listener: Listen to main user doc for isPremium (AUTHORITATIVE SOURCE)
-    useEffect(() => {
-        if (!user) return;
-
-        const userRef = doc(db, "users", user.uid);
-        const unsubscribe = onSnapshot(userRef, (docSnap) => {
-            if (docSnap.exists()) {
-                const cloudPremium = docSnap.data().isPremium || false;
-                if (cloudPremium !== store.isPremium) {
-                    console.log("SyncManager: Authority - Premium status updated from cloud:", cloudPremium);
-                    store.setPremium(cloudPremium);
-                }
-            }
-        });
-
-        return () => unsubscribe();
-    }, [user, store.setPremium, store.isPremium]);
 
     return null; // Headless component
 }

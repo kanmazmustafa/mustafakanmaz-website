@@ -7,7 +7,9 @@ export const routing = defineRouting({
         'hi', 'hr', 'hu', 'it', 'ja', 'ku', 'nl', 'pl', 'ps', 'pt',
         'ro', 'ru', 'sq', 'sr', 'th', 'tr', 'uk', 'vi', 'zh'
     ],
-    defaultLocale: 'de'
+
+    defaultLocale: 'en',
+    localePrefix: 'as-needed'
 });
 
 export const { Link, redirect, usePathname, useRouter } =

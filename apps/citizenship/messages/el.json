@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Σελιδοδείκτες",
+    "my_bookmarks_sub": "Αποθηκευμένες ερωτήσεις",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Αφαίρεση Διαφημίσεων",
+    "select_state": "Select State",
     "select_state_placeholder": "Επιλέξτε κράτος",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Καλώς ήρθατε, {name}",
-    "my_bookmarks": "Σελιδοδείκτες",
-    "my_bookmarks_sub": "Αποθηκευμένες ερωτήσεις",
     "upgrade_caps": "ΑΝΑΒΑΘΜΙΣΗ",
-    "remove_ads": "Αφαίρεση Διαφημίσεων"
+    "welcome": "Καλώς ήρθατε, {name}"
   },
   "disclaimer": {
     "accept": "ΚΑΤΑΝΟΩ & ΞΕΚΙΝΩ",
@@ -104,8 +105,15 @@
     "success": "Επιτυχία",
     "user_profile": "Προφίλ Χρήστη"
   },
+  "footer": {
+    "about": "Σχετικά",
+    "about_content": "Το Citizenship Test 2026 είναι ένα ολοκληρωμένο εργαλείο σχεδιασμένο για την προετοιμασία για τις εξετάσεις γερμανικής υπηκοότητας.\n\nΜε αυτή την εφαρμογή, μπορείτε να κάνετε προσομοιώσεις εξετάσεων, να παρακολουθείτε τα λάθη σας και να αυξήσετε την επιτυχία σας.\n\nΈκδοση: 1.0.2",
+    "about_title": "Σχετικά με την εφαρμογή",
+    "legal": "Νομική Σημείωση"
+  },
   "home": {
     "app_title": "Τεστ Πολιτογράφησης 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Πολιτική στη Δημοκρατία",
       "general_test": "Γενικό Τεστ",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Κατηγορίες",
     "main_modes": "Κύριες Λειτουργίες",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Σελιδοδείκτες",
     "my_bookmarks_sub": "Αποθηκευμένες ερωτήσεις",
     "my_errors": "Τα Λάθη Μου",
@@ -123,11 +132,11 @@
     "overall_success": "Συνολική Επιτυχία",
     "practice": "Εξάσκηση",
     "premium_edition": "Έκδοση Premium",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Συνολική Πρόοδος",
     "quiz_simulation": "Προσομοίωση Εξέτασης",
     "quiz_simulation_sub": "33 Ερωτήσεις • 45 Λεπτά",
-    "welcome": "Καλώς Ήρθατε",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Καλώς Ήρθατε"
   },
   "practice": {
     "explanation": "Επεξήγηση",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 ώρες χωρίς διαφημίσεις",
     "all_questions": "Πρόσβαση σε όλες τις ερωτήσεις",
+    "best_value": "ΚΑΛΥΤΕΡΗ ΑΞΙΑ",
     "priority_support": "Προτεραιότητα υποστήριξης",
     "remove_ads_forever": "Κατάργηση διαφημίσεων",
-    "unlimited_sims": "Απεριόριστες προσομοιώσεις",
-    "best_value": "ΚΑΛΥΤΕΡΗ ΑΞΙΑ"
+    "unlimited_sims": "Απεριόριστες προσομοιώσεις"
   },
   "quiz": {
     "exit_confirm": "Έξοδος",
@@ -185,11 +194,11 @@
     "failed": "ΑΠΟΤΥΧΙΑ...",
     "failed_msg": "Δυστυχώς, δεν περάσατε.",
     "home_btn": "ΕΠΙΣΤΡΟΦΗ ΣΤΗΝ ΑΡΧΙΚΗ",
+    "retake_exam": "Επανάληψη εξέτασης",
+    "retry": "Προσπαθήστε ξανά",
     "review_errors": "ΕΛΕΓΧΟΣ ΛΑΘΩΝ",
     "score_label": "ΣΩΣΤΕΣ ΑΠΑΝΤΗΣΕΙΣ",
-    "success_msg": "Περάσατε το Τεστ Πολιτογράφησης!",
-    "retry": "Προσπαθήστε ξανά",
-    "retake_exam": "Επανάληψη εξέτασης"
+    "success_msg": "Περάσατε το Τεστ Πολιτογράφησης!"
   },
   "review": {
     "app_bar_title": "Ανασκόπηση",

@@ -1,0 +1,240 @@
+--- i18n Scanner Report ---
+Missing Keys: 106
+Potential Hardcoded Text: 5
+------------------------------
+
+[MISSING TRANSLATION KEYS]
+login_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:98
+welcome_back 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:99
+login_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:104
+register_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:105
+email 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:112
+password 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:113
+login_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:118
+email 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:127
+password 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:128
+register_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:133
+no_account 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:145
+google_sign_in 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:153
+guest_login 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\auth\page.tsx:158
+selection_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:75
+unlock_potential 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:78
+temp_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:88
+temp_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:90
+ad_free_2h 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:98
+all_questions 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:104
+remove_ads_forever 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:110
+best_value 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:129
+lifetime_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:137
+lifetime_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:138
+remove_ads_forever 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:152
+unlimited_sims 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:158
+priority_support 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:164
+upgrade_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\page.tsx:176
+restore_success 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\success\page.tsx:28
+member 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\app\[locale]\premium\success\page.tsx:38
+loading 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\ads\InterstitialOverlay.tsx:61
+restore_success 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\ads\RewardedAdButton.tsx:49
+temp_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\ads\RewardedAdButton.tsx:101
+temp_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\ads\RewardedAdButton.tsx:104
+error_requires_recent_login 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:34
+error_generic 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:36
+delete_account 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:50
+delete_confirm_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:59
+delete_confirm_body 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:62
+delete_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\auth\DeleteAccountDialog.tsx:92
+title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\common\DisclaimerOverlay.tsx:37
+content 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\common\DisclaimerOverlay.tsx:42
+required 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\common\DisclaimerOverlay.tsx:46
+accept 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\common\DisclaimerOverlay.tsx:55
+loading 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:58
+select_state 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:131
+logout 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:178
+app_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:193
+app_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:200
+stats 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:258
+overall_success 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:259
+upgrade_caps 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:275
+remove_ads 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:276
+main_modes 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:301
+quiz_simulation 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:318
+quiz_simulation_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:319
+my_errors 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:335
+my_errors_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:336
+my_bookmarks 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:352
+my_bookmarks_sub 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:358
+categories_label 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:382
+practice 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:400
+exam_mode 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:411
+selected_state 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:419
+select_state_placeholder 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:426
+map_hint 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:444
+app_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:457
+about 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:26
+about_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:35
+about_content 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:39
+legal 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:50
+title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:59
+content 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\FooterLinks.tsx:63
+about 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:68
+legal 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:73
+logout 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:83
+about_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:97
+about_content 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:101
+title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:113
+content 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\HeaderMenu.tsx:117
+mastered_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\MasteryBadge.tsx:47
+mastered_desc 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\MasteryBadge.tsx:50
+image_alt 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuestionCard.tsx:68
+explanation 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuestionCard.tsx:135
+prev 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuestionCard.tsx:151
+finish 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuestionCard.tsx:158
+next 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuestionCard.tsx:158
+congrats 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:140
+failed 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:140
+success_msg 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:145
+failed_msg 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:146
+score_label 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:151
+review_errors 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:164
+retake_exam 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:172
+retry 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:172
+home_btn 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizResult.tsx:180
+perfect_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:43
+perfect_desc 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:44
+back_home 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:46
+back 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:59
+app_bar_title 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:61
+explanation 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:130
+back_home 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizReview.tsx:146
+no_questions 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizRunner.tsx:218
+no_questions 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizRunner.tsx:221
+quiz_simulation 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizRunner.tsx:276
+exit_confirm 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\quiz\QuizRunner.tsx:296
+
+[POTENTIAL HARDCODED TEXT]
+"Navigation Menu" 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:95 
+  -> <SheetTitle>Navigation Menu</SheetTitle>
+
+"Select State" 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\DashboardClient.tsx:135 
+  -> <SelectValue placeholder="Select State" />
+
+"Language" 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\components\dashboard\LanguageSelector.tsx:61 
+  -> <SelectValue placeholder="Language" />
+
+"Promise" 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\context\AuthContext.tsx:10 
+  -> signOut: () => Promise<void>;
+
+"Promise" 
+  -> c:\Users\musta\Desktop\software\android\devam_eden_projeler\einburgeringtest_app_web\src\context\AuthContext.tsx:11 
+  -> deleteAccount: () => Promise<void>;
+

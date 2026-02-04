@@ -20,7 +20,7 @@ export function SideAd({ side, className }: SideAdProps) {
     return (
         <aside
             className={cn(
-                "hidden xl:flex flex-col items-center sticky top-24 w-48 h-[600px] bg-slate-100/50 rounded-2xl border border-dashed border-slate-200 p-2 overflow-hidden",
+                "hidden lg:flex flex-shrink-0 flex-col items-center sticky top-24 w-[300px] h-[600px] bg-slate-100/50 rounded-2xl border border-dashed border-slate-200 p-2 overflow-hidden",
                 side === "left" ? "mr-4" : "ml-4",
                 className
             )}

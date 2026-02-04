@@ -50,3 +50,14 @@ Thumbs.db
 **/deploy_debug.log
 **/deploy_log*.txt
 **/dump_output.txt
+
+# Temporary Debug Files
+*_debug.txt
+*_list.txt
+response*.html
+curl_*.txt
+curl_*.html
+body*.html
+body*.txt
+package.json.bak
+standalone_citizenship/

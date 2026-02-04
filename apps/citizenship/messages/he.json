@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "הסימניות שלי",
+    "my_bookmarks_sub": "סקור שאלות שמורות",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "הסר פרסומות",
+    "select_state": "Select State",
     "select_state_placeholder": "בחר מדינה",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "ברוך הבא, {name}",
-    "my_bookmarks": "הסימניות שלי",
-    "my_bookmarks_sub": "סקור שאלות שמורות",
     "upgrade_caps": "שדרג",
-    "remove_ads": "הסר פרסומות"
+    "welcome": "ברוך הבא, {name}"
   },
   "disclaimer": {
     "accept": "אני מבין ומתחיל",
@@ -104,8 +105,15 @@
     "success": "הצלחה",
     "user_profile": "פרופיל משתמש"
   },
+  "footer": {
+    "about": "אודות",
+    "about_content": "מבחן האזרחות 2026 הוא כלי מקיף המיועד להכנה למבחן האזרחות הגרמני.\n\nעם אפליקציה זו, תוכלו לבצע סימולציות מבחן, לעקוב אחר הטעויות שלכם להגדיל את סיכויי ההצלחה.\n\nגרסה: 1.0.2",
+    "about_title": "אודות האפליקציה",
+    "legal": "הצהרה משפטית"
+  },
   "home": {
     "app_title": "מבחן האזרחות 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "פוליטיקה בדמוקרטיה",
       "general_test": "מבחן כללי",
@@ -115,6 +123,7 @@
     },
     "categories_label": "קטגוריות",
     "main_modes": "מצבים ראשיים",
+    "mistakes": "Mistakes",
     "my_bookmarks": "הסימניות שלי",
     "my_bookmarks_sub": "סקור שאלות שמורות",
     "my_errors": "הטעויות שלי",
@@ -123,11 +132,11 @@
     "overall_success": "הצלחה כללית",
     "practice": "תרגול",
     "premium_edition": "גרסת פרימיום",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "התקדמות כללית",
     "quiz_simulation": "סימולציית מבחן",
     "quiz_simulation_sub": "33 שאלות • 45 דקות",
-    "welcome": "ברוך הבא",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "ברוך הבא"
   },
   "practice": {
     "explanation": "הסבר",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "שעתיים ללא פרסומות",
     "all_questions": "גישה לכל השאלות",
+    "best_value": "הערך הטוב ביותר",
     "priority_support": "תמיכה בעדיפות",
     "remove_ads_forever": "הסר פרסומות לתמיד",
-    "unlimited_sims": "סימולציות ללא הגבלה",
-    "best_value": "הערך הטוב ביותר"
+    "unlimited_sims": "סימולציות ללא הגבלה"
   },
   "quiz": {
     "exit_confirm": "יציאה",
@@ -185,11 +194,11 @@
     "failed": "נכשל...",
     "failed_msg": "לצערי, לא עברת.",
     "home_btn": "חזרה לבית",
+    "retake_exam": "גש למבחן שוב",
+    "retry": "נסה שוב",
     "review_errors": "סקור טעויות",
     "score_label": "תשובות נכונות",
-    "success_msg": "עברת את מבחן האזרחות!",
-    "retry": "נסה שוב",
-    "retake_exam": "גש למבחן שוב"
+    "success_msg": "עברת את מבחן האזרחות!"
   },
   "review": {
     "app_bar_title": "סקירה",

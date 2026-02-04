@@ -1,0 +1,55 @@
+﻿node.exe : npm warn config ignoring workspace config at C:\Us
+ers\musta\Desktop\software\web\mustafakanmaz.com\apps\portfol
+io/.npmrc
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\node
+js/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm warn config 
+   ...ortfolio/.npmrc:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+> next-app@0.1.0 build
+> next build
+
+The module 'react' was not found. Next.js requires that you i
+nclude it in 'dependencies' of your 'package.json'. To add it
+, run 'npm install react'
+The module 'react-dom' was not found. Next.js requires that y
+ou include it in 'dependencies' of your 'package.json'. To ad
+d it, run 'npm install react-dom'
+unhandledRejection Error: Cannot find module 'react'
+Require stack:
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\server\app-render\dynamic-rendering.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\server\node-environment-extensions\utils.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\server\node-environment-extensions\random.j
+s
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\server\node-environment.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\build\utils.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\build\entries.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\build\index.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_
+modules\next\dist\cli\next-build.js
+    at ignore-listed frames {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path C:\Users\musta\Desktop\software\web\mustafakan
+maz.com\apps\portfolio
+npm error workspace next-app@0.1.0
+npm error location C:\Users\musta\Desktop\software\web\mustaf
+akanmaz.com\apps\portfolio
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c next b
+uild

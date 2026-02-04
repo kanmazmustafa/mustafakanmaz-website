@@ -8,11 +8,10 @@ export interface SyncData {
     selectedLanguage: string;
     rewardedUntil: number | null;
     hasAcceptedDisclaimer: boolean;
-    isPremium?: boolean; // Read-only from server point of view during upload
+    isPremium: boolean;
     lastIndices: Record<string, number>;
     streaks: Record<number, number>;
     bookmarks: number[];
-    updatedAt: number;
 }
 
 /**
@@ -21,17 +20,18 @@ export interface SyncData {
  */
 export async function uploadUserData(uid: string, data: SyncData) {
     try {
+        // Also update main user doc for premium status (redundancy/parity)
+        const userRef = doc(db, "users", uid);
+        await setDoc(userRef, {
+            isPremium: data.isPremium,
+            lastLogin: serverTimestamp(),
+        }, { merge: true });
+
         // Update progress in subcollection
         const progressRef = doc(db, "users", uid, "sync", "progress");
         await setDoc(progressRef, {
             ...data,
             updatedAt: serverTimestamp(),
-        }, { merge: true });
-
-        // Update last login on main user doc
-        const userRef = doc(db, "users", uid);
-        await setDoc(userRef, {
-            lastLogin: serverTimestamp(),
         }, { merge: true });
 
         return Date.now();

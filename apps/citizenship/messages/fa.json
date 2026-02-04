@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "نشانک‌های من",
+    "my_bookmarks_sub": "مرور سوالات ذخیره شده",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "حذف تبلیغات",
+    "select_state": "Select State",
     "select_state_placeholder": "انتخاب استان",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "خوش آمدید، {name}",
-    "my_bookmarks": "نشانک‌های من",
-    "my_bookmarks_sub": "مرور سوالات ذخیره شده",
     "upgrade_caps": "ارتقا",
-    "remove_ads": "حذف تبلیغات"
+    "welcome": "خوش آمدید، {name}"
   },
   "disclaimer": {
     "accept": "متوجه شدم و شروع می‌کنم",
@@ -104,8 +105,15 @@
     "success": "موفقیت",
     "user_profile": "پروفایل کاربر"
   },
+  "footer": {
+    "about": "درباره ما",
+    "about_content": "آزمون شهروندی 2026 ابزاری جامع است که برای آمادگی آزمون شهروندی آلمان طراحی شده است.\n\nبا این برنامه می‌توانید شبیه‌سازی آزمون انجام دهید، اشتباهات خود را پیگیری کنید و موفقیت خود را افزایش دهید.\n\nنسخه: 1.0.2",
+    "about_title": "درباره برنامه",
+    "legal": "سلب مسئولیت قانونی"
+  },
   "home": {
     "app_title": "آزمون شهروندی ۲۰۲۶",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "سیاست در دموکراسی",
       "general_test": "آزمون عمومی",
@@ -115,6 +123,7 @@
     },
     "categories_label": "دسته‌بندی‌ها",
     "main_modes": "حالت‌های اصلی",
+    "mistakes": "Mistakes",
     "my_bookmarks": "نشانک‌های من",
     "my_bookmarks_sub": "مرور سوالات ذخیره شده",
     "my_errors": "اشتباهات من",
@@ -123,11 +132,11 @@
     "overall_success": "موفقیت کلی",
     "practice": "تمرین",
     "premium_edition": "نسخه پرمیوم",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "پیشرفت کلی",
     "quiz_simulation": "شبیه‌سازی امتحان",
     "quiz_simulation_sub": "۳۳ سوال • ۴۵ دقیقه",
-    "welcome": "خوش آمدید",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "خوش آمدید"
   },
   "practice": {
     "explanation": "توضیح",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 ساعت بدون تبلیغات",
     "all_questions": "دسترسی به تمام سوالات",
+    "best_value": "بهترین ارزش",
     "priority_support": "پشتیبانی اولویت‌دار",
     "remove_ads_forever": "حذف دائمی تبلیغات",
-    "unlimited_sims": "شبیه‌سازی نامحدود",
-    "best_value": "بهترین ارزش"
+    "unlimited_sims": "شبیه‌سازی نامحدود"
   },
   "quiz": {
     "exit_confirm": "خروج",
@@ -185,11 +194,11 @@
     "failed": "مردود...",
     "failed_msg": "متاسفانه قبول نشدید.",
     "home_btn": "بازگشت به خانه",
+    "retake_exam": "تکرار آزمون",
+    "retry": "تلاش مجدد",
     "review_errors": "مرور اشتباهات",
     "score_label": "پاسخ‌های صحیح",
-    "success_msg": "شما در آزمون شهروندی قبول شدید!",
-    "retry": "تلاش مجدد",
-    "retake_exam": "تکرار آزمون"
+    "success_msg": "شما در آزمون شهروندی قبول شدید!"
   },
   "review": {
     "app_bar_title": "مرور",

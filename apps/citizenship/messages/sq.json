@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Të preferuarat e mia",
+    "my_bookmarks_sub": "Rishikoni të ruajturat",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Remove Ads",
+    "select_state": "Select State",
     "select_state_placeholder": "Zgjidhni shtetin",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Mirë se vini, {name}",
-    "my_bookmarks": "Të preferuarat e mia",
-    "my_bookmarks_sub": "Rishikoni të ruajturat"
+    "upgrade_caps": "Upgrade Caps",
+    "welcome": "Mirë se vini, {name}"
   },
   "disclaimer": {
     "accept": "KUPTOJ DHE FILLO",
@@ -102,8 +105,15 @@
     "success": "Sukses",
     "user_profile": "Profili i Përdoruesit"
   },
+  "footer": {
+    "about": "Rreth nesh",
+    "about_content": "Citizenship Test 2026 është një mjet gjithëpërfshirës i krijuar për përgatitjen e provimit të shtetësisë gjermane.\n\nMe këtë aplikacion, mund të bëni simulime provimi, të gjurmoni gabimet tuaja dhe të rrisni suksesin tuaj.\n\nVersioni: 1.0.2",
+    "about_title": "Rreth Aplikacionit",
+    "legal": "Mohim Ligjor"
+  },
   "home": {
     "app_title": "Testi i Shtetësisë 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politika në Demokraci",
       "general_test": "Test i Përgjithshëm",
@@ -113,6 +123,7 @@
     },
     "categories_label": "Kategoritë",
     "main_modes": "Mënyrat Kryesore",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Të preferuarat e mia",
     "my_bookmarks_sub": "Rishikoni të ruajturat",
     "my_errors": "Gabimet e Mia",
@@ -121,11 +132,11 @@
     "overall_success": "Suksesi i Përgjithshëm",
     "practice": "Praktikë",
     "premium_edition": "Edicioni Premium",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Progresi i Përgjithshëm",
     "quiz_simulation": "Simulimi i Provimit",
     "quiz_simulation_sub": "33 Pyetje • 45 Minuta",
-    "welcome": "Mirë se vini",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Mirë se vini"
   },
   "practice": {
     "explanation": "Shpjegim",
@@ -160,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 orë pa reklama",
     "all_questions": "Qasje në të gjitha pyetjet",
+    "best_value": "VLERA MË E MIRË",
     "priority_support": "Mbështetje prioritare",
     "remove_ads_forever": "Hiqni reklamat përgjithmonë",
-    "unlimited_sims": "Simulime pakufizuar",
-    "best_value": "VLERA MË E MIRË"
+    "unlimited_sims": "Simulime pakufizuar"
   },
   "quiz": {
     "exit_confirm": "Dalje",
@@ -183,6 +194,8 @@
     "failed": "DËSHTUAR...",
     "failed_msg": "Fatkeqësisht, nuk keni kaluar.",
     "home_btn": "KTHEHU NË BALLINË",
+    "retake_exam": "Retake Exam",
+    "retry": "Retry",
     "review_errors": "RISHIKO GABIMET",
     "score_label": "PËRGJIGJET E SAKTA",
     "success_msg": "Ju keni kaluar testin e shtetësisë!"

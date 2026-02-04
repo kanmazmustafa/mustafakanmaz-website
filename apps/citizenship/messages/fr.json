@@ -74,6 +74,8 @@
     "practice_mode_desc": "Apprenez à votre rythme",
     "practice_mode_detail": "Parcourez toutes les 300+ questions par catégorie.",
     "privacy_notice": "{name} respecte votre vie privée. Vous pouvez supprimer votre compte.",
+    "remove_ads": "Supprimer Pubs",
+    "select_state": "Select State",
     "select_state_placeholder": "Choisir l'État",
     "selected_state": "État sélectionné",
     "start_exam": "Commencer l'examen",
@@ -82,9 +84,8 @@
     "stats_desc": "Aperçu de vos performances",
     "subtitle": "Suivez vos progrès et préparez-vous à l'examen.",
     "success_rate": "Taux de réussite",
-    "welcome": "Bienvenue, {name}",
     "upgrade_caps": "PREMIUM",
-    "remove_ads": "Supprimer Pubs"
+    "welcome": "Bienvenue, {name}"
   },
   "disclaimer": {
     "accept": "COMPRIS & COMMENCER",
@@ -104,8 +105,15 @@
     "success": "Succès",
     "user_profile": "Profil Utilisateur"
   },
+  "footer": {
+    "about": "À propos",
+    "about_content": "Citizenship Test 2026 est un outil complet conçu pour ceux qui se préparent à l'examen de citoyenneté allemande.\n\nAvec cette application, vous pouvez effectuer des simulations d'examen, suivre vos erreurs et augmenter vos chances de succès.\n\nVersion : 1.0.2",
+    "about_title": "À propos de l'app",
+    "legal": "Mentions Légales"
+  },
   "home": {
     "app_title": "Test de Naturalisation 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politique en Démocratie",
       "general_test": "Test Général",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Catégories",
     "main_modes": "Modes Principaux",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Mes Favoris",
     "my_bookmarks_sub": "Revoir les questions",
     "my_errors": "Mes Erreurs",
@@ -123,11 +132,11 @@
     "overall_success": "Réussite Globale",
     "practice": "Pratique",
     "premium_edition": "Édition Premium",
+    "privacy_notice": "{name} respecte votre vie privée. Vous pouvez supprimer votre compte.",
     "progress_card_title": "Progrès Global",
     "quiz_simulation": "Simulation d'Examen",
     "quiz_simulation_sub": "33 Questions • 45 Minutes",
-    "welcome": "Bienvenue",
-    "privacy_notice": "{name} respecte votre vie privée. Vous pouvez supprimer votre compte."
+    "welcome": "Bienvenue"
   },
   "practice": {
     "explanation": "Explication",
@@ -162,11 +171,11 @@
   "premium_features": {
     "ad_free_2h": "2 Heures Sans Pub",
     "all_questions": "Accès à toutes les questions",
+    "best_value": "MEILLEURE VALEUR",
     "priority_support": "Support prioritaire",
     "remove_ads_forever": "Supprimer les pubs",
     "unlimited_sims": "Simulations illimitées",
-    "unlock_potential": "Libérez tout votre potentiel.",
-    "best_value": "MEILLEURE VALEUR"
+    "unlock_potential": "Libérez tout votre potentiel."
   },
   "quiz": {
     "exit_confirm": "Quitter",
@@ -186,11 +195,11 @@
     "failed": "ÉCHOUÉ...",
     "failed_msg": "Malheureusement, vous n'avez pas réussi.",
     "home_btn": "RETOUR À L'ACCUEIL",
+    "retake_exam": "Repasser l'examen",
+    "retry": "Réessayer",
     "review_errors": "REVOIR LES ERREURS",
     "score_label": "BONNES RÉPONSES",
-    "success_msg": "Vous avez réussi le test de naturalisation !",
-    "retry": "Réessayer",
-    "retake_exam": "Repasser l'examen"
+    "success_msg": "Vous avez réussi le test de naturalisation !"
   },
   "review": {
     "app_bar_title": "Revue",

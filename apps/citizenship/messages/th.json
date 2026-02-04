@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "ที่คั่นหน้าของฉัน",
+    "my_bookmarks_sub": "ทบทวนคำถาม",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "ลบโฆษณา",
+    "select_state": "Select State",
     "select_state_placeholder": "เลือกรัฐ",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "ยินดีต้อนรับ, {name}",
-    "my_bookmarks": "ที่คั่นหน้าของฉัน",
-    "my_bookmarks_sub": "ทบทวนคำถาม",
     "upgrade_caps": "อัปเกรด",
-    "remove_ads": "ลบโฆษณา"
+    "welcome": "ยินดีต้อนรับ, {name}"
   },
   "disclaimer": {
     "accept": "ฉันเข้าใจและเริ่ม",
@@ -104,8 +105,15 @@
     "success": "ความสำเร็จ",
     "user_profile": "โปรไฟล์ผู้ใช้"
   },
+  "footer": {
+    "about": "เกี่ยวกับ",
+    "about_content": "Citizenship Test 2026 เป็นเครื่องมือครบวงจรที่ออกแบบมาเพื่อเตรียมตัวสอบสัญชาติเยอรมัน\n\nด้วยแอปนี้ คุณสามารถจำลองการสอบ ติดตามข้อผิดพลาด และเพิ่มโอกาสความสำเร็จของคุณ\n\nเวอร์ชัน: 1.0.2",
+    "about_title": "เกี่ยวกับแอป",
+    "legal": "ข้อความปฏิเสธความรับผิดชอบ"
+  },
   "home": {
     "app_title": "การทดสอบสัญชาติ 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "การเมืองในระบอบประชาธิปไตย",
       "general_test": "แบบทดสอบทั่วไป",
@@ -115,6 +123,7 @@
     },
     "categories_label": "หมวดหมู่",
     "main_modes": "โหมดหลัก",
+    "mistakes": "Mistakes",
     "my_bookmarks": "ที่คั่นหน้าของฉัน",
     "my_bookmarks_sub": "ทบทวนคำถาม",
     "my_errors": "ข้อผิดพลาดของฉัน",
@@ -123,11 +132,11 @@
     "overall_success": "ความสำเร็จโดยรวม",
     "practice": "ฝึกฝน",
     "premium_edition": "รุ่นพรีเมียม",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "ความก้าวหน้าโดยรวม",
     "quiz_simulation": "จำลองการสอบ",
     "quiz_simulation_sub": "33 คำถาม • 45 นาที",
-    "welcome": "ยินดีต้อนรับ",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "ยินดีต้อนรับ"
   },
   "practice": {
     "explanation": "คำอธิบาย",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "ไม่มีโฆษณา 2 ชม.",
     "all_questions": "เข้าถึงทุกคำถาม",
+    "best_value": "คุ้มค่าที่สุด",
     "priority_support": "การสนับสนุนลำดับความสำคัญ",
     "remove_ads_forever": "ลบโฆษณาถาวร",
-    "unlimited_sims": "แบบจำลองไม่จำกัด",
-    "best_value": "คุ้มค่าที่สุด"
+    "unlimited_sims": "แบบจำลองไม่จำกัด"
   },
   "quiz": {
     "exit_confirm": "ออก",
@@ -185,11 +194,11 @@
     "failed": "ล้มเหลว...",
     "failed_msg": "น่าเสียดาย คุณสอบไม่ผ่าน",
     "home_btn": "กลับหน้าหลัก",
+    "retake_exam": "สอบใหม่",
+    "retry": "ลองอีกครั้ง",
     "review_errors": "ทบทวนข้อผิดพลาด",
     "score_label": "คำตอบที่ถูกต้อง",
-    "success_msg": "คุณสอบผ่านการทดสอบสัญชาติ!",
-    "retry": "ลองอีกครั้ง",
-    "retake_exam": "สอบใหม่"
+    "success_msg": "คุณสอบผ่านการทดสอบสัญชาติ!"
   },
   "review": {
     "app_bar_title": "ทบทวน",

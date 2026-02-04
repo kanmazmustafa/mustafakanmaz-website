@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Dấu trang",
+    "my_bookmarks_sub": "Xem lại đã lưu",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Xóa quảng cáo",
+    "select_state": "Select State",
     "select_state_placeholder": "Chọn bang",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Chào mừng, {name}",
-    "my_bookmarks": "Dấu trang",
-    "my_bookmarks_sub": "Xem lại đã lưu",
     "upgrade_caps": "NÂNG CẤP",
-    "remove_ads": "Xóa quảng cáo"
+    "welcome": "Chào mừng, {name}"
   },
   "disclaimer": {
     "accept": "TÔI HIỂU VÀ BẮT ĐẦU",
@@ -104,8 +105,15 @@
     "success": "Thành công",
     "user_profile": "Hồ sơ người dùng"
   },
+  "footer": {
+    "about": "Giới thiệu",
+    "about_content": "Citizenship Test 2026 là một công cụ toàn diện được thiết kế để chuẩn bị cho kỳ thi quốc tịch Đức.\n\nVới ứng dụng này, bạn có thể chạy mô phỏng kỳ thi, theo dõi các lỗi của mình và tăng cơ hội thành công.\n\nPhiên bản: 1.0.2",
+    "about_title": "Về Ứng dụng",
+    "legal": "Thông báo pháp lý"
+  },
   "home": {
     "app_title": "Bài Kiểm Tra Quốc Tịch 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Chính trị trong nền dân chủ",
       "general_test": "Bài kiểm tra chung",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Danh mục",
     "main_modes": "Chế độ chính",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Dấu trang",
     "my_bookmarks_sub": "Xem lại đã lưu",
     "my_errors": "Lỗi của tôi",
@@ -123,11 +132,11 @@
     "overall_success": "Thành công chung",
     "practice": "Luyện tập",
     "premium_edition": "Phiên bản cao cấp",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Tiến độ chung",
     "quiz_simulation": "Mô phỏng bài thi",
     "quiz_simulation_sub": "33 Câu hỏi • 45 Phút",
-    "welcome": "Chào mừng",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Chào mừng"
   },
   "practice": {
     "explanation": "Giải thích",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 giờ không quảng cáo",
     "all_questions": "Truy cập tất cả câu hỏi",
+    "best_value": "GIÁ TRỊ NHẤT",
     "priority_support": "Hỗ trợ ưu tiên",
     "remove_ads_forever": "Xóa quảng cáo vĩnh viễn",
-    "unlimited_sims": "Mô phỏng không giới hạn",
-    "best_value": "GIÁ TRỊ NHẤT"
+    "unlimited_sims": "Mô phỏng không giới hạn"
   },
   "quiz": {
     "exit_confirm": "Thoát",
@@ -185,11 +194,11 @@
     "failed": "THẤT BẠI...",
     "failed_msg": "Rất tiếc, bạn đã không vượt qua.",
     "home_btn": "VỀ TRANG CHỦ",
+    "retake_exam": "Thi lại",
+    "retry": "Thử lại",
     "review_errors": "XEM LẠI LỖI",
     "score_label": "CÂU TRẢ LỜI ĐÚNG",
-    "success_msg": "Bạn đã vượt qua bài kiểm tra quốc tịch!",
-    "retry": "Thử lại",
-    "retake_exam": "Thi lại"
+    "success_msg": "Bạn đã vượt qua bài kiểm tra quốc tịch!"
   },
   "review": {
     "app_bar_title": "Xem lại",

@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "我的书签",
+    "my_bookmarks_sub": "查看保存的问题",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "移除广告",
+    "select_state": "Select State",
     "select_state_placeholder": "选择州",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "欢迎, {name}",
-    "my_bookmarks": "我的书签",
-    "my_bookmarks_sub": "查看保存的问题",
     "upgrade_caps": "升级",
-    "remove_ads": "移除广告"
+    "welcome": "欢迎, {name}"
   },
   "disclaimer": {
     "accept": "明白并开始",
@@ -104,8 +105,15 @@
     "success": "成功",
     "user_profile": "用户资料"
   },
+  "footer": {
+    "about": "关于",
+    "about_content": "Citizenship Test 2026 是专为准备德国入籍考试而设计的综合工具。\n\n通过此应用程序，您可以进行模拟考试，跟踪错误并提高成功率。\n\n版本：1.0.2",
+    "about_title": "关于应用",
+    "legal": "法律免责声明"
+  },
   "home": {
     "app_title": "公民入籍考试 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "民主中的政治",
       "general_test": "综合测试",
@@ -115,6 +123,7 @@
     },
     "categories_label": "分类",
     "main_modes": "主要模式",
+    "mistakes": "Mistakes",
     "my_bookmarks": "我的书签",
     "my_bookmarks_sub": "查看保存的问题",
     "my_errors": "我的错误",
@@ -123,11 +132,11 @@
     "overall_success": "总体成功率",
     "practice": "练习",
     "premium_edition": "高级版",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "总体进度",
     "quiz_simulation": "模拟考试",
     "quiz_simulation_sub": "33 道题 • 45 分钟",
-    "welcome": "欢迎",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "欢迎"
   },
   "practice": {
     "explanation": "解释",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2小时无广告",
     "all_questions": "访问所有问题",
+    "best_value": "超值",
     "priority_support": "优先支持",
     "remove_ads_forever": "永久移除广告",
-    "unlimited_sims": "无限模拟",
-    "best_value": "超值"
+    "unlimited_sims": "无限模拟"
   },
   "quiz": {
     "exit_confirm": "退出",
@@ -185,11 +194,11 @@
     "failed": "未通过...",
     "failed_msg": "很遗憾，你没有通过。",
     "home_btn": "返回首页",
+    "retake_exam": "重考",
+    "retry": "重试",
     "review_errors": "查看错误",
     "score_label": "正确答案",
-    "success_msg": "你通过了公民入籍考试！",
-    "retry": "重试",
-    "retake_exam": "重考"
+    "success_msg": "你通过了公民入籍考试！"
   },
   "review": {
     "app_bar_title": "回顾",

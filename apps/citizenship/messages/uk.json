@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Прибрати рекламу",
+    "select_state": "Select State",
     "select_state_placeholder": "Оберіть землю",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Ласкаво просимо, {name}",
     "upgrade_caps": "ПРЕМІУМ",
-    "remove_ads": "Прибрати рекламу"
+    "welcome": "Ласкаво просимо, {name}"
   },
   "disclaimer": {
     "accept": "ЗРОЗУМІЛО, РОЗПОЧАТИ",
@@ -104,8 +105,15 @@
     "success": "Успіх",
     "user_profile": "Профіль користувача"
   },
+  "footer": {
+    "about": "Про додаток",
+    "about_content": "Citizenship Test 2026 — це комплексний інструмент, розроблений для підготовки до іспиту на громадянство Німеччини.\n\nЗа допомогою цього додатка ви можете проходити симуляції іспитів, відстежувати свої помилки та підвищувати свій успіх.\n\nВерсія: 1.0.2",
+    "about_title": "Про Додаток",
+    "legal": "Правова інформація"
+  },
   "home": {
     "app_title": "Тест на громадянство 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Політика в демократії",
       "general_test": "Загальний тест",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Категорії",
     "main_modes": "Основні режими",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Мої закладки",
     "my_bookmarks_sub": "Переглянути збережені",
     "my_errors": "Мої помилки",
@@ -123,11 +132,11 @@
     "overall_success": "Загальний успіх",
     "practice": "Практика",
     "premium_edition": "Преміум версія",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Загальний прогрес",
     "quiz_simulation": "Симуляція іспиту",
     "quiz_simulation_sub": "33 питання • 45 хвилин",
-    "welcome": "Ласкаво просимо",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Ласкаво просимо"
   },
   "practice": {
     "explanation": "Пояснення",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 години без реклами",
     "all_questions": "Доступ до всіх питань",
+    "best_value": "НАЙКРАЩА ЦІНА",
     "priority_support": "Пріоритетна підтримка",
     "remove_ads_forever": "Видалити рекламу назавжди",
-    "unlimited_sims": "Безлімітні симуляції",
-    "best_value": "НАЙКРАЩА ЦІНА"
+    "unlimited_sims": "Безлімітні симуляції"
   },
   "quiz": {
     "exit_confirm": "Вийти",
@@ -185,11 +194,11 @@
     "failed": "НЕ СКЛАДЕНО...",
     "failed_msg": "На жаль, ви не склали.",
     "home_btn": "НА ГОЛОВНУ",
+    "retake_exam": "Перездати екзамен",
+    "retry": "Спробувати знову",
     "review_errors": "ПЕРЕГЛЯНУТИ ПОМИЛКИ",
     "score_label": "ПРАВИЛЬНІ ВІДПОВІДІ",
-    "success_msg": "Ви склали тест на громадянство!",
-    "retry": "Спробувати знову",
-    "retake_exam": "Перездати екзамен"
+    "success_msg": "Ви склали тест на громадянство!"
   },
   "review": {
     "app_bar_title": "Перегляд",

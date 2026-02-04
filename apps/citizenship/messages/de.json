@@ -74,6 +74,8 @@
     "practice_mode_desc": "Lernen Sie in Ihrem eigenen Tempo",
     "practice_mode_detail": "Durchsuchen Sie alle 300+ Fragen nach Kategorien.",
     "privacy_notice": "{name} schätzt deine Privatsphäre. Du kannst dein Konto und alle Daten jederzeit löschen.",
+    "remove_ads": "Keine Werbung",
+    "select_state": "Select State",
     "select_state_placeholder": "Bundesland wählen",
     "selected_state": "Gewähltes Bundesland",
     "start_exam": "Prüfung starten",
@@ -82,9 +84,8 @@
     "stats_desc": "Übersicht über Ihre Leistung",
     "subtitle": "Verfolgen Sie Ihren Fortschritt und bereiten Sie sich auf die Prüfung vor.",
     "success_rate": "Erfolgsquote",
-    "welcome": "Willkommen, {name}",
     "upgrade_caps": "UPGRADE",
-    "remove_ads": "Keine Werbung"
+    "welcome": "Willkommen, {name}"
   },
   "disclaimer": {
     "accept": "VERSTANDEN & STARTEN",
@@ -104,8 +105,15 @@
     "success": "Erfolg",
     "user_profile": "Benutzerprofil"
   },
+  "footer": {
+    "about": "Über uns",
+    "about_content": "Einbürgerungstest 2026 ist ein umfassendes Werkzeug zur Vorbereitung auf den deutschen Einbürgerungstest.\n\nMit dieser App können Sie Prüfungssimulationen durchführen, Ihre Fehler verfolgen und Ihren Erfolg steigern.\n\nVersion: 1.0.2",
+    "about_title": "Über die App",
+    "legal": "Rechtliches & Impressum"
+  },
   "home": {
     "app_title": "Einbürgerungstest 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politik in der Demokratie",
       "general_test": "Allgemeiner Test",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Kategorien",
     "main_modes": "Hauptmodi",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Meine Favoriten",
     "my_bookmarks_sub": "Gespeicherte Fragen wiederholen",
     "my_errors": "Meine Fehler",
@@ -123,11 +132,11 @@
     "overall_success": "Gesamterfolg",
     "practice": "Üben",
     "premium_edition": "Premium Edition",
+    "privacy_notice": "{name} schätzt deine Privatsphäre. Du kannst dein Konto und alle Daten jederzeit löschen.",
     "progress_card_title": "Gesamtfortschritt",
     "quiz_simulation": "Prüfungssimulation",
     "quiz_simulation_sub": "33 Fragen • 45 Minuten",
-    "welcome": "Willkommen",
-    "privacy_notice": "{name} schätzt deine Privatsphäre. Du kannst dein Konto und alle Daten jederzeit löschen."
+    "welcome": "Willkommen"
   },
   "practice": {
     "explanation": "Erklärung",
@@ -186,11 +195,11 @@
     "failed": "NICHT BESTANDEN...",
     "failed_msg": "Leider haben Sie das Ziel nicht erreicht.",
     "home_btn": "ZURÜCK ZUM START",
+    "retake_exam": "Prüfung wiederholen",
+    "retry": "Wiederholen",
     "review_errors": "FEHLER ÜBERPRÜFEN",
     "score_label": "RICHTIGE ANTWORTEN",
-    "success_msg": "Sie haben den Test bestanden!",
-    "retry": "Wiederholen",
-    "retake_exam": "Prüfung wiederholen"
+    "success_msg": "Sie haben den Test bestanden!"
   },
   "review": {
     "app_bar_title": "Überprüfung",

@@ -19,7 +19,7 @@ export const AD_CONFIG = {
         // Shown on the result page
         RESULT_BANNER: "7506716540",
 
-        // Use this for any specialized ad units
+        // Use Dashboard ID as fallback for any specialized units
         IN_ARTICLE: "8773580651"
     },
 

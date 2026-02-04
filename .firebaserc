@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "mustafakanmaz-com"
-  }
+  },
+  "targets": {
+    "mustafakanmaz-com": {
+      "hosting": {
+        "portfolio": [
+          "mustafakanmaz-com"
+        ],
+        "citizenship": [
+          "mustafakanmaz-citizenship"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

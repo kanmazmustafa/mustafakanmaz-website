@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} cijeni vašu privatnost. Možete trajno izbrisati svoj račun i sve povezane podatke u bilo kojem trenutku.",
+    "remove_ads": "Ukloni reklame",
+    "select_state": "Select State",
     "select_state_placeholder": "Odaberi Pokrajinu",
     "selected_state": "Odabrana Pokrajina",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Dobrodošli, {name}",
     "upgrade_caps": "NADOGRADNJA",
-    "remove_ads": "Ukloni reklame"
+    "welcome": "Dobrodošli, {name}"
   },
   "disclaimer": {
     "accept": "RAZUMIJEM I ZAPOČNI",
@@ -104,8 +105,15 @@
     "success": "Uspjeh",
     "user_profile": "Korisnički Profil"
   },
+  "footer": {
+    "about": "O aplikaciji",
+    "about_content": "Citizenship Test 2026 je sveobuhvatan alat dizajniran za pripremu za njemački ispit za državljanstvo.\n\nS ovom aplikacijom možete raditi simulacije ispita, pratiti svoje greške i povećati svoj uspjeh.\n\nVerzija: 1.0.2",
+    "about_title": "O Aplikaciji",
+    "legal": "Pravna napomena"
+  },
   "home": {
     "app_title": "Test za Državljanstvo 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politika u Demokratiji",
       "general_test": "Opći Test",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Kategorije",
     "main_modes": "Glavni Režimi",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Moji Favoriti",
     "my_bookmarks_sub": "Pregledaj sačuvana pitanja",
     "my_errors": "Moje Greške",
@@ -123,11 +132,11 @@
     "overall_success": "Ukupan Uspjeh",
     "practice": "Vježbanje",
     "premium_edition": "Premium Verzija",
+    "privacy_notice": "{name} cijeni vašu privatnost. Možete trajno izbrisati svoj račun i sve povezane podatke u bilo kojem trenutku.",
     "progress_card_title": "Ukupan Napredak",
     "quiz_simulation": "Simulacija Ispita",
     "quiz_simulation_sub": "33 Pitanja • 45 Minuta",
-    "welcome": "Dobrodošli",
-    "privacy_notice": "{name} cijeni vašu privatnost. Možete trajno izbrisati svoj račun i sve povezane podatke u bilo kojem trenutku."
+    "welcome": "Dobrodošli"
   },
   "practice": {
     "explanation": "Objašnjenje",
@@ -162,11 +171,11 @@
   "premium_features": {
     "ad_free_2h": "2 Sata Bez Reklama",
     "all_questions": "Pristup svim pitanjima",
+    "best_value": "NAJBOLJA VRIJEDNOST",
     "priority_support": "Prioritetna podrška",
     "remove_ads_forever": "Ukloni reklame zauvijek",
     "unlimited_sims": "Neograničene simulacije",
-    "unlock_potential": "Otključajte puni potencijal svoje pripreme.",
-    "best_value": "NAJBOLJA VRIJEDNOST"
+    "unlock_potential": "Otključajte puni potencijal svoje pripreme."
   },
   "quiz": {
     "exit_confirm": "Izađi",
@@ -186,11 +195,11 @@
     "failed": "NIJE POLOŽENO...",
     "failed_msg": "Nažalost, niste položili.",
     "home_btn": "NAZAD NA POČETNU",
+    "retake_exam": "Ponovi ispit",
+    "retry": "Pokušaj ponovo",
     "review_errors": "PREGLEDAJ GREŠKE",
     "score_label": "TAČNI ODGOVORI",
-    "success_msg": "Položili ste test za državljanstvo!",
-    "retry": "Pokušaj ponovo",
-    "retake_exam": "Ponovi ispit"
+    "success_msg": "Položili ste test za državljanstvo!"
   },
   "review": {
     "app_bar_title": "Pregled",

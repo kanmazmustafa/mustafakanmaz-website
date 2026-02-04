@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Убрать рекламу",
+    "select_state": "Select State",
     "select_state_placeholder": "Выберите землю",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Добро пожаловать, {name}",
     "upgrade_caps": "ПРЕМИУМ",
-    "remove_ads": "Убрать рекламу"
+    "welcome": "Добро пожаловать, {name}"
   },
   "disclaimer": {
     "accept": "ПОНЯТНО, НАЧАТЬ",
@@ -104,8 +105,15 @@
     "success": "Успех",
     "user_profile": "Профиль пользователя"
   },
+  "footer": {
+    "about": "О приложении",
+    "about_content": "Тест на гражданство 2026 — это комплексный инструмент для подготовки к экзамену на гражданство Германии.\n\nС помощью этого приложения вы можете проходить симуляции экзаменов, отслеживать свои ошибки и повысить свои шансы на успех.\n\nВерсия: 1.0.2",
+    "about_title": "О Приложении",
+    "legal": "Правовая информация"
+  },
   "home": {
     "app_title": "Тест на гражданство 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Политика в демократии",
       "general_test": "Общий тест",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Категории",
     "main_modes": "Основные режимы",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Закладки",
     "my_bookmarks_sub": "Повторить сохраненные",
     "my_errors": "Мои ошибки",
@@ -123,11 +132,11 @@
     "overall_success": "Общий успех",
     "practice": "Практика",
     "premium_edition": "Премиум версия",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Общий прогресс",
     "quiz_simulation": "Симуляция экзамена",
     "quiz_simulation_sub": "33 вопроса • 45 минут",
-    "welcome": "Добро пожаловать",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Добро пожаловать"
   },
   "practice": {
     "explanation": "Объяснение",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 часа без рекламы",
     "all_questions": "Доступ ко всем вопросам",
+    "best_value": "ЛУЧШИЙ ВЫБОР",
     "priority_support": "Приоритетная поддержка",
     "remove_ads_forever": "Убрать рекламу навсегда",
-    "unlimited_sims": "Безлимитные симуляции",
-    "best_value": "ЛУЧШИЙ ВЫБОР"
+    "unlimited_sims": "Безлимитные симуляции"
   },
   "quiz": {
     "exit_confirm": "Выйти",
@@ -185,11 +194,11 @@
     "failed": "НЕ ПРОЙДЕНО...",
     "failed_msg": "К сожалению, вы не сдали.",
     "home_btn": "НА ГЛАВНУЮ",
+    "retake_exam": "Пересдать экзамен",
+    "retry": "Повторить",
     "review_errors": "ПОСМОТРЕТЬ ОШИБКИ",
     "score_label": "ПРАВИЛЬНЫЕ ОТВЕТЫ",
-    "success_msg": "Вы сдали тест на гражданство!",
-    "retry": "Повторить",
-    "retake_exam": "Пересдать экзамен"
+    "success_msg": "Вы сдали тест на гражданство!"
   },
   "review": {
     "app_bar_title": "Просмотр",

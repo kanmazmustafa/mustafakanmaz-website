@@ -15,39 +15,22 @@ export interface DataService {
 let currentExplanations: Record<string, any> = {};
 let currentLocale: string = '';
 
-async function loadExplanations(locale: string, retryCount = 0) {
+async function loadExplanations(locale: string) {
     if (currentLocale === locale) return;
     try {
         const data = await import(`@/data/explanations/${locale}.json`);
         currentExplanations = data.default || data;
         currentLocale = locale;
     } catch (e) {
-        console.error(`Failed to load explanations for ${locale} (Attempt ${retryCount + 1})`, e);
-
-        if (retryCount < 2) {
-            // Wait 1s and retry twice
-            await new Promise(r => setTimeout(r, 1000));
-            return loadExplanations(locale, retryCount + 1);
-        }
-
-        // Fallback to German if all retries fail
+        console.error(`Failed to load explanations for ${locale}`, e);
+        // Fallback to German if not found
         if (locale !== 'de') {
-            try {
-                const deData = await import(`@/data/explanations/de.json`);
-                currentExplanations = deData.default || deData;
-                currentLocale = 'de';
-            } catch (deError) {
-                console.error("Failed to load fallback German explanations", deError);
-                currentExplanations = {};
-            }
-        } else {
-            currentExplanations = {};
+            const deData = await import(`@/data/explanations/de.json`);
+            currentExplanations = deData.default || deData;
+            currentLocale = 'de';
         }
     }
 }
-
-// Internal cache for parsed questions to improve performance
-const parsedCache: Record<string, Record<number, ParsedQuestion>> = {};
 
 export const dataService = {
     getAllQuestions: (): Question[] => {
@@ -55,20 +38,14 @@ export const dataService = {
     },
 
     getQuestionsByState: (state: string): Question[] => {
-        return (questionsStatesData as Question[]).filter(
+        const stateQuestions = (questionsStatesData as Question[]).filter(
             (q) => q.state === state
         );
+        return stateQuestions;
     },
 
-    // Optimized helper with internal memoization
+    // Helper to parse the standardized Question object into a UI-friendly format
     parseQuestion: (raw: Question, locale: string = 'de'): ParsedQuestion => {
-        const cacheKey = `${locale}_${currentLocale}`;
-        if (!parsedCache[cacheKey]) parsedCache[cacheKey] = {};
-
-        if (parsedCache[cacheKey][raw.id]) {
-            return parsedCache[cacheKey][raw.id];
-        }
-
         const qText = (raw as any)[`question_${locale}`] || raw.question_de || "";
         const optionsMap = (raw as any)[`options_${locale}`] || raw.options_de || {};
 
@@ -81,9 +58,10 @@ export const dataService = {
 
         const correctLetter = raw.correct_option_id.toLowerCase();
         const correctIndex = correctLetter.charCodeAt(0) - 'a'.charCodeAt(0);
+
         const explanation = currentExplanations[raw.id.toString()] || "";
 
-        const parsed: ParsedQuestion = {
+        return {
             id: raw.id,
             text: qText,
             options,
@@ -92,9 +70,6 @@ export const dataService = {
             image: raw.image_url,
             explanation
         };
-
-        parsedCache[cacheKey][raw.id] = parsed;
-        return parsed;
     },
 
     loadExplanations

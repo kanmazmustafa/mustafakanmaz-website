@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Könyvjelzőim",
+    "my_bookmarks_sub": "Mentett kérdések áttekintése",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Hirdetések Eltávolítása",
+    "select_state": "Select State",
     "select_state_placeholder": "Válasszon államot",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Üdvözöljük, {name}",
-    "my_bookmarks": "Könyvjelzőim",
-    "my_bookmarks_sub": "Mentett kérdések áttekintése",
     "upgrade_caps": "FRISSÍTÉS",
-    "remove_ads": "Hirdetések Eltávolítása"
+    "welcome": "Üdvözöljük, {name}"
   },
   "disclaimer": {
     "accept": "ÉRTEM ÉS KEZDEM",
@@ -104,8 +105,15 @@
     "success": "Siker",
     "user_profile": "Felhasználói Profil"
   },
+  "footer": {
+    "about": "Rólunk",
+    "about_content": "A Citizenship Test 2026 egy átfogó eszköz, amelyet a német állampolgársági vizsgára valók felkészüléshez terveztek.\n\nEzzel az alkalmazással vizsga szimulációkat végezhet, nyomon követheti hibáit és növelheti sikerét.\n\nVerzió: 1.0.2",
+    "about_title": "Az alkalmazásról",
+    "legal": "Jogi nyilatkozat"
+  },
   "home": {
     "app_title": "Állampolgársági Teszt 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politika a Demokráciában",
       "general_test": "Általános Teszt",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Kategóriák",
     "main_modes": "Fő Módok",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Könyvjelzőim",
     "my_bookmarks_sub": "Mentett kérdések áttekintése",
     "my_errors": "Hibáim",
@@ -123,11 +132,11 @@
     "overall_success": "Összesített Siker",
     "practice": "Gyakorlás",
     "premium_edition": "Prémium verzió",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Teljes Előrehaladás",
     "quiz_simulation": "Vizsga Szimuláció",
     "quiz_simulation_sub": "33 Kérdés • 45 Perc",
-    "welcome": "Üdvözöljük",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Üdvözöljük"
   },
   "practice": {
     "explanation": "Magyarázat",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 óra reklámmentes",
     "all_questions": "Hozzáférés minden kérdéshez",
+    "best_value": "LEGJOBB ÉRTÉK",
     "priority_support": "Elsőbbségi támogatás",
     "remove_ads_forever": "Hirdetések eltávolítása",
-    "unlimited_sims": "Korlátlan szimulációk",
-    "best_value": "LEGJOBB ÉRTÉK"
+    "unlimited_sims": "Korlátlan szimulációk"
   },
   "quiz": {
     "exit_confirm": "Kilépés",
@@ -185,11 +194,11 @@
     "failed": "SIKERTELEN...",
     "failed_msg": "Sajnos nem sikerült.",
     "home_btn": "VISSZA A FŐOLDALRA",
+    "retake_exam": "Vizsga megismétlése",
+    "retry": "Próbáld újra",
     "review_errors": "HIBÁK ÁTTEKINTÉSE",
     "score_label": "HELYES VÁLASZOK",
-    "success_msg": "Sikeresen teljesítette az állampolgársági tesztet!",
-    "retry": "Próbáld újra",
-    "retake_exam": "Vizsga megismétlése"
+    "success_msg": "Sikeresen teljesítette az állampolgársági tesztet!"
   },
   "review": {
     "app_bar_title": "Áttekintés",

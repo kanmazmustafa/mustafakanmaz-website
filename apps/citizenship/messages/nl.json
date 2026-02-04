@@ -74,6 +74,8 @@
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Geen Reclame",
+    "select_state": "Select State",
     "select_state_placeholder": "Kies Deelstaat",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -82,9 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Welkom, {name}",
     "upgrade_caps": "UPGRADEN",
-    "remove_ads": "Geen Reclame"
+    "welcome": "Welkom, {name}"
   },
   "disclaimer": {
     "accept": "BEGREPEN & STARTEN",
@@ -104,8 +105,15 @@
     "success": "Succes",
     "user_profile": "Gebruikersprofiel"
   },
+  "footer": {
+    "about": "Over",
+    "about_content": "Citizenship Test 2026 is een uitgebreide tool ontworpen voor de voorbereiding op het Duitse inburgeringsexamen.\n\nMet deze app kun je examensimulaties uitvoeren, je fouten bijhouden en je succes vergroten.\n\nVersie: 1.0.2",
+    "about_title": "Over de App",
+    "legal": "Juridische Disclaimer"
+  },
   "home": {
     "app_title": "Inburgeringstest 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Politiek in de Democratie",
       "general_test": "Algemene Test",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Categorieën",
     "main_modes": "Hoofdmodi",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Mijn Bladwijzers",
     "my_bookmarks_sub": "Bekijk opgeslagen vragen",
     "my_errors": "Mijn Fouten",
@@ -123,11 +132,11 @@
     "overall_success": "Algemeen Succes",
     "practice": "Oefenen",
     "premium_edition": "Premium Editie",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Algemene Voortgang",
     "quiz_simulation": "Examensimulatie",
     "quiz_simulation_sub": "33 Vragen • 45 Minuten",
-    "welcome": "Welkom",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Welkom"
   },
   "practice": {
     "explanation": "Uitleg",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 Uur Reclamevrij",
     "all_questions": "Toegang tot alle vragen",
+    "best_value": "BESTE WAARDE",
     "priority_support": "Prioriteit ondersteuning",
     "remove_ads_forever": "Verwijder reclames",
-    "unlimited_sims": "Onbeperkte simulaties",
-    "best_value": "BESTE WAARDE"
+    "unlimited_sims": "Onbeperkte simulaties"
   },
   "quiz": {
     "exit_confirm": "Verlaten",
@@ -185,11 +194,11 @@
     "failed": "GEZAKT...",
     "failed_msg": "Helaas, je bent niet geslaagd.",
     "home_btn": "TERUG NAAR HOME",
+    "retake_exam": "Examen opnieuw doen",
+    "retry": "Opnieuw proberen",
     "review_errors": "FOUTEN BEKIJKEN",
     "score_label": "JUISTE ANTWOORDEN",
-    "success_msg": "Je bent geslaagd voor de inburgeringstest!",
-    "retry": "Opnieuw proberen",
-    "retake_exam": "Examen opnieuw doen"
+    "success_msg": "Je bent geslaagd voor de inburgeringstest!"
   },
   "review": {
     "app_bar_title": "Overzicht",

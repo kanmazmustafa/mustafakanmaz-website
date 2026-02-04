@@ -67,11 +67,15 @@
     "map_hint": "Click on the map to change your state",
     "mastered_desc": "3x Correct Streak!",
     "mastered_title": "MASTERED!",
+    "my_bookmarks": "Моите отметки",
+    "my_bookmarks_sub": "Преглед на запазените",
     "passed_exams": "Passed Exams",
     "practice_mode": "Practice",
     "practice_mode_desc": "Learn at your own pace",
     "practice_mode_detail": "Browse all 300+ questions by category.",
     "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
+    "remove_ads": "Премахни реклами",
+    "select_state": "Select State",
     "select_state_placeholder": "Изберете държава",
     "selected_state": "Selected State",
     "start_exam": "Start Exam",
@@ -80,11 +84,8 @@
     "stats_desc": "Overview of your performance",
     "subtitle": "Track your progress and prepare for the exam.",
     "success_rate": "Success Rate",
-    "welcome": "Добре дошли, {name}",
-    "my_bookmarks": "Моите отметки",
-    "my_bookmarks_sub": "Преглед на запазените",
     "upgrade_caps": "НАДГРАЖДАНЕ",
-    "remove_ads": "Премахни реклами"
+    "welcome": "Добре дошли, {name}"
   },
   "disclaimer": {
     "accept": "РАЗБРАХ И НАЧАЛО",
@@ -104,8 +105,15 @@
     "success": "Успех",
     "user_profile": "Потребителски профил"
   },
+  "footer": {
+    "about": "За нас",
+    "about_content": "Citizenship Test 2026 е цялостен инструмент, предназначен за подготовка за изпит за немско гражданство.\n\nС това приложение можете да правите симулации на изпити, да следите грешките си и да увеличите успеха си.\n\nВерсия: 1.0.2",
+    "about_title": "За приложението",
+    "legal": "Правен отказ"
+  },
   "home": {
     "app_title": "Тест за гражданство 2026",
+    "bookmarks": "Bookmarks",
     "categories": {
       "democracy": "Политика и демокрация",
       "general_test": "Общ тест",
@@ -115,6 +123,7 @@
     },
     "categories_label": "Категории",
     "main_modes": "Основни режими",
+    "mistakes": "Mistakes",
     "my_bookmarks": "Моите отметки",
     "my_bookmarks_sub": "Преглед на запазените",
     "my_errors": "Моите грешки",
@@ -123,11 +132,11 @@
     "overall_success": "Общ успех",
     "practice": "Практика",
     "premium_edition": "Премиум версия",
+    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time.",
     "progress_card_title": "Общ напредък",
     "quiz_simulation": "Симулация на изпит",
     "quiz_simulation_sub": "33 въпроса • 45 минути",
-    "welcome": "Добре дошли",
-    "privacy_notice": "{name} values your privacy. You can permanently delete your account and all associated data at any time."
+    "welcome": "Добре дошли"
   },
   "practice": {
     "explanation": "Обяснение",
@@ -162,10 +171,10 @@
   "premium_features": {
     "ad_free_2h": "2 часа без реклами",
     "all_questions": "Достъп до всички въпроси",
+    "best_value": "Най-добра стойност",
     "priority_support": "Приоритетна поддръжка",
     "remove_ads_forever": "Премахни рекламите завинаги",
-    "unlimited_sims": "Неограничени симулации",
-    "best_value": "Най-добра стойност"
+    "unlimited_sims": "Неограничени симулации"
   },
   "quiz": {
     "exit_confirm": "Изход",
@@ -185,11 +194,11 @@
     "failed": "НЕУСПЕШЕН...",
     "failed_msg": "За съжаление не издържахте.",
     "home_btn": "КЪМ НАЧАЛОТО",
+    "retake_exam": "Повтори изпита",
+    "retry": "Опитай пак",
     "review_errors": "ПРЕГЛЕД НА ГРЕШКИТЕ",
     "score_label": "ПРАВИЛНИ ОТГОВОРИ",
-    "success_msg": "Вие издържахте теста за гражданство!",
-    "retry": "Опитай пак",
-    "retake_exam": "Повтори изпита"
+    "success_msg": "Вие издържахте теста за гражданство!"
   },
   "review": {
     "app_bar_title": "Преглед",
