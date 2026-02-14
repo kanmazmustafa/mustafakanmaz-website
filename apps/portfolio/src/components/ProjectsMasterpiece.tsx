@@ -31,7 +31,7 @@ export default function ProjectsMasterpiece() {
             title: "Ham Radio Exam",
             category: "Featured Application",
             description: "Master your amateur radio license exam with our comprehensive study tool. Supporting multiple countries and regulations.",
-            link: "/ham-radio-exam-prep",
+            link: "https://hamradio.mustafakanmaz.com",
             gradient: "from-indigo-500/20 to-purple-600/20",
             accentColor: "indigo-500",
             stats: [
@@ -41,7 +41,7 @@ export default function ProjectsMasterpiece() {
             links: [
                 { label: "Android", url: "https://play.google.com/store/apps/details?id=com.kanmazmustafa.ushamradio", type: "android", active: true },
                 { label: "iOS", url: "/coming-soon", type: "ios" },
-                { label: "Web App", url: "/ham-radio-exam-prep", type: "web", active: true }
+                { label: "Web App", url: "https://hamradio.mustafakanmaz.com", type: "web", active: true }
             ]
         },
         {

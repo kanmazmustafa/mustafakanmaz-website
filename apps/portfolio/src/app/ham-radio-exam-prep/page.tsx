@@ -132,7 +132,7 @@ export default function HamRadioPage() {
                     <span>© 2026 Mustafa Kanmaz</span>
                     <div className="flex gap-8">
                         <Link href="/ham-radio-exam-prep/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-                        <Link href="/projects" className="hover:text-white transition-colors">More Projects</Link>
+                        <Link href="https://mustafakanmaz.com/projects" className="hover:text-white transition-colors">More Projects</Link>
                     </div>
                 </div>
             </footer>

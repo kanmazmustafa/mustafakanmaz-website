@@ -6,13 +6,11 @@ export default function Footer() {
                     © {new Date().getFullYear()} Mustafa Kanmaz. All rights reserved.
                 </p>
                 <div className="flex items-center gap-6 text-sm font-medium text-slate-500 dark:text-slate-400">
-                    <a href="https://github.com/mustafakanmaz" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white transition-colors">
+                    <a href="https://github.com/kanmazmustafa" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white transition-colors">
                         GitHub
                     </a>
-                    <a href="https://twitter.com/mustafakanmaz" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white transition-colors">
-                        Twitter
-                    </a>
-                    <a href="https://linkedin.com/in/mustafakanmaz" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white transition-colors">
+
+                    <a href="https://www.linkedin.com/in/mustafa-kanmaz" target="_blank" rel="noopener noreferrer" className="hover:text-foreground dark:hover:text-white transition-colors">
                         LinkedIn
                     </a>
                 </div>

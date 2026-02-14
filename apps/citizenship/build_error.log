@@ -1,0 +1,241 @@
+npm warn config ignoring workspace config at C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship/.npmrc
+
+> mustafakanmaz-citizenship-app@0.1.0 build
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\musta\Desktop\software\web\mustafakanmaz.com\pnpm-lock.yaml as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\package-lock.json
+
+   ▲ Next.js 15.5.12
+   - Environments: .env.local, .env.production
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.8s
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./src/app/api/checkout/route.ts
+12:48  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+37:19  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/[locale]/auth/page.tsx
+11:69  Warning: 'CardFooter' is defined but never used.  @typescript-eslint/no-unused-vars
+41:21  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+57:21  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+85:21  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/[locale]/layout.tsx
+33:45  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/[locale]/premium/cancel/page.tsx
+10:11  Warning: 't' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/[locale]/premium/page.tsx
+49:21  Error: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+
+./src/app/[locale]/premium/success/page.tsx
+5:56  Warning: 'CardContent' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/ads/AdBanner.tsx
+20:40  Error: Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\ads\AdBanner.tsx:20:40
+  18 | }: AdBannerProps) => {
+  19 |     const { isPremium, rewardedUntil } = useUserStore();
+> 20 |     const isRewarded = rewardedUntil ? Date.now() < rewardedUntil : false;
+     |                                        ^^^^^^^^^^ Cannot call impure function
+  21 |     const adRef = useRef<HTMLModElement>(null);
+  22 |
+  23 |     useEffect(() => {  react-hooks/purity
+37:21  Error: Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free.  @typescript-eslint/ban-ts-comment
+40:29  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/ads/InterstitialOverlay.tsx
+23:69  Error: Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\ads\InterstitialOverlay.tsx:23:69
+  21 |
+  22 |     // Check if ads should be hidden
+> 23 |     const isAdFree = isPremium || (rewardedUntil && rewardedUntil > Date.now());
+     |                                                                     ^^^^^^^^^^ Cannot call impure function
+  24 |
+  25 |     // Frequency cap: 3 minutes (180,000 ms)
+  26 |     const isCapped = Date.now() - lastInterstitialTime < 180000;  react-hooks/purity
+26:22  Error: Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\ads\InterstitialOverlay.tsx:26:22
+  24 |
+  25 |     // Frequency cap: 3 minutes (180,000 ms)
+> 26 |     const isCapped = Date.now() - lastInterstitialTime < 180000;
+     |                      ^^^^^^^^^^ Cannot call impure function
+  27 |
+  28 |     useEffect(() => {
+  29 |         if (isVisible) {  react-hooks/purity
+
+./src/components/ads/RewardedAdOverlay.tsx
+5:10  Warning: 'Loader2' is defined but never used.  @typescript-eslint/no-unused-vars
+5:22  Warning: 'Play' is defined but never used.  @typescript-eslint/no-unused-vars
+22:13  Error: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\ads\RewardedAdOverlay.tsx:22:13
+  20 |     useEffect(() => {
+  21 |         if (!isVisible) {
+> 22 |             setTimeLeft(30);
+     |             ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  23 |             setIsFinished(false);
+  24 |             return;
+  25 |         }  react-hooks/set-state-in-effect
+
+./src/components/ads/SideAd.tsx
+16:40  Error: Error: Cannot call impure function during render
+
+`Date.now` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\ads\SideAd.tsx:16:40
+  14 | export function SideAd({ side, className }: SideAdProps) {
+  15 |     const { isPremium, rewardedUntil } = useUserStore();
+> 16 |     const isRewarded = rewardedUntil ? Date.now() < rewardedUntil : false;
+     |                                        ^^^^^^^^^^ Cannot call impure function
+  17 |
+  18 |     if (isPremium || isRewarded || !AD_CONFIG.ENABLED.SIDEBAR) return null;
+  19 |  react-hooks/purity
+
+./src/components/auth/DeleteAccountDialog.tsx
+32:23  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/components/auth/SyncManager.tsx
+77:8  Warning: React Hook useEffect has missing dependencies: 'store.bookmarks', 'store.lastIndices', and 'store.streaks'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/components/common/DisclaimerOverlay.tsx
+17:9  Error: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\common\DisclaimerOverlay.tsx:17:9
+  15 |
+  16 |     useEffect(() => {
+> 17 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  18 |     }, []);
+  19 |
+  20 |     if (!mounted || hasAcceptedDisclaimer) return null;  react-hooks/set-state-in-effect
+42:33  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+42:48  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+
+./src/components/dashboard/DashboardClient.tsx
+7:84  Warning: 'Info' is defined but never used.  @typescript-eslint/no-unused-vars
+7:90  Warning: 'ShieldAlert' is defined but never used.  @typescript-eslint/no-unused-vars
+7:103  Warning: 'FileText' is defined but never used.  @typescript-eslint/no-unused-vars
+27:5  Warning: 'SheetClose' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/dashboard/FooterLinks.tsx
+7:5  Warning: 'DialogDescription' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/dashboard/HeaderMenu.tsx
+20:5  Warning: 'DialogTrigger' is defined but never used.  @typescript-eslint/no-unused-vars
+23:47  Warning: 'FileText' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/quiz/MasteryBadge.tsx
+18:13  Error: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\quiz\MasteryBadge.tsx:18:13
+  16 |     useEffect(() => {
+  17 |         if (isVisible) {
+> 18 |             setShow(true);
+     |             ^^^^^^^ Avoid calling setState() directly within an effect
+  19 |             const timer = setTimeout(() => {
+  20 |                 setShow(false);
+  21 |                 onClose();  react-hooks/set-state-in-effect
+
+./src/components/quiz/QuestionCard.tsx
+1:10  Warning: 'useLocale' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/quiz/QuizResult.tsx
+5:10  Warning: 'useRouter' is defined but never used.  @typescript-eslint/no-unused-vars
+10:10  Warning: 'Card' is defined but never used.  @typescript-eslint/no-unused-vars
+25:11  Warning: 'tHome' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+26:11  Warning: 'tCommon' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+58:29  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+73:11  Warning: 'percentage' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/quiz/QuizReview.tsx
+66:46  Warning: 'idx' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/quiz/QuizRunner.tsx
+11:10  Warning: 'Progress' is defined but never used.  @typescript-eslint/no-unused-vars
+23:10  Warning: 'AD_CONFIG' is defined but never used.  @typescript-eslint/no-unused-vars
+51:13  Warning: 'lastIndices' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+54:12  Warning: 'isExplanationsLoading' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+61:13  Error: Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship\src\components\quiz\QuizRunner.tsx:61:13
+  59 |     useEffect(() => {
+  60 |         if (isFinished && !isLoading) {
+> 61 |             setShowInterstitial(true);
+     |             ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  62 |         }
+  63 |     }, [isFinished, isLoading]);
+  64 |  react-hooks/set-state-in-effect
+68:35  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+93:35  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+96:27  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+162:8  Warning: React Hook useEffect has a missing dependency: 'locale'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/i18n/request.ts
+45:60  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/lib/data-service.ts
+15:41  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+49:31  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+50:36  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/store/quiz-store.ts
+63:36  Warning: 'answers' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+64:21  Error: 'correct' is never reassigned. Use 'const' instead.  prefer-const
+64:21  Warning: 'correct' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+65:35  Warning: 'q' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/store/user-store.ts
+185:34  Warning: 'state' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+npm error Lifecycle script `build` failed with error:
+npm error code 1
+npm error path C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship
+npm error workspace mustafakanmaz-citizenship-app@0.1.0
+npm error location C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\citizenship
+npm error command failed
+npm error command C:\Windows\system32\cmd.exe /d /s /c next build

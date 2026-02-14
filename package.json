@@ -13,16 +13,12 @@
     },
     "devDependencies": {
         "esbuild": "^0.27.2",
-        "next": "^16.1.4",
+        "next": "^15.1.0",
         "node-which": "^1.0.0",
         "turbo": "latest"
     },
     "engines": {
         "node": "20"
     },
-    "optionalDependencies": {
-        "@next/swc-linux-x64-gnu": "^16.1.4",
-        "@next/swc-linux-x64-musl": "^16.1.4",
-        "@next/swc-win32-x64-msvc": "^16.1.4"
-    }
+    "packageManager": "npm@11.6.2"
 }

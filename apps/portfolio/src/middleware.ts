@@ -7,6 +7,22 @@ const intlMiddleware = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
+    // Ham Radio Subdomain Handling
+    const hostname = request.headers.get('host') ?? '';
+    if (hostname.startsWith('hamradio.')) {
+        const url = request.nextUrl.clone();
+        // Map root of subdomain to ham-radio-exam-prep
+        if (pathname === '/') {
+            url.pathname = '/ham-radio-exam-prep';
+            return NextResponse.rewrite(url);
+        }
+        // Map other paths relative to ham-radio-exam-prep (e.g. /privacy-policy)
+        if (!pathname.startsWith('/ham-radio-exam-prep')) {
+            url.pathname = `/ham-radio-exam-prep${pathname}`;
+            return NextResponse.rewrite(url);
+        }
+    }
+
     // Skip middleware for citizenship app paths
     if (pathname.includes('/einbuergerungstest/app')) {
         return;

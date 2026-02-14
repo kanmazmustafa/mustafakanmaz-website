@@ -1,0 +1,45 @@
+npm warn config ignoring workspace config at C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\portfolio/.npmrc
+The module 'react' was not found. Next.js requires that you include it in 'dependencies' of your 'package.json'. To add it, run 'npm install react'
+The module 'react-dom' was not found. Next.js requires that you include it in 'dependencies' of your 'package.json'. To add it, run 'npm install react-dom'
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\musta\Desktop\software\web\mustafakanmaz.com\pnpm-lock.yaml as the root directory.
+ To silence this warning, set `outputFileTracingRoot` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/output#caveats for more information.
+ Detected additional lockfiles: 
+   * C:\Users\musta\Desktop\software\web\mustafakanmaz.com\apps\portfolio\package-lock.json
+
+node:internal/modules/cjs/loader:1424
+  throw err;
+  ^
+
+Error: Cannot find module 'react'
+Require stack:
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\app-render\dynamic-rendering.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\node-environment-extensions\utils.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\node-environment-extensions\random.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\node-environment.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\lib\router-server.js
+- C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\lib\start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\require-hook.js:57:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (C:\Users\musta\Desktop\software\web\mustafakanmaz.com\node_modules\next\dist\server\require-hook.js:68:28)
+    at require (node:internal/modules/helpers:152:16) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\app-render\\dynamic-rendering.js',
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\node-environment-extensions\\utils.js',
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\node-environment-extensions\\random.js',
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\node-environment.js',
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'C:\\Users\\musta\\Desktop\\software\\web\\mustafakanmaz.com\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+
+Node.js v24.12.0
+[?25h
