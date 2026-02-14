@@ -21,7 +21,7 @@ const projects = [
         category: "Education & Utility",
         description: "Comprehensive preparation tool for Ham Radio exams supporting 29+ languages.",
         gradient: "from-indigo-500 to-purple-500",
-        link: "/ham-radio-exam-prep"
+        link: "https://hamradio.mustafakanmaz.com/"
     },
     {
         id: 5,

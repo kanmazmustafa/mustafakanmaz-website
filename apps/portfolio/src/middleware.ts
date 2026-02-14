@@ -13,12 +13,12 @@ export default function middleware(request: NextRequest) {
         const url = request.nextUrl.clone();
         // Map root of subdomain to ham-radio-exam-prep
         if (pathname === '/') {
-            url.pathname = '/ham-radio-exam-prep';
+            url.pathname = '/en/ham-radio-exam-prep';
             return NextResponse.rewrite(url);
         }
         // Map other paths relative to ham-radio-exam-prep (e.g. /privacy-policy)
         if (!pathname.startsWith('/ham-radio-exam-prep')) {
-            url.pathname = `/ham-radio-exam-prep${pathname}`;
+            url.pathname = `/en/ham-radio-exam-prep${pathname}`;
             return NextResponse.rewrite(url);
         }
     }

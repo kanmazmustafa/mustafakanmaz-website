@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 
 import { useTheme } from './ThemeProvider';
 
@@ -23,7 +23,7 @@ export default function ProjectsMasterpiece() {
             ],
             links: [
                 { label: "Android", url: "https://play.google.com/store/apps/details?id=com.kanmazmustafa.einbuergerungstest", type: "android", active: true },
-                { label: "iOS", url: "/coming-soon", type: "ios" },
+                { label: "iOS", url: "https://apps.apple.com/us/app/lid-einburgerungstest/id6759058355", type: "ios" },
                 { label: "Web App", url: "/einbuergerungstest", type: "web", active: true }
             ]
         },
@@ -31,7 +31,7 @@ export default function ProjectsMasterpiece() {
             title: "Ham Radio Exam",
             category: "Featured Application",
             description: "Master your amateur radio license exam with our comprehensive study tool. Supporting multiple countries and regulations.",
-            link: "https://hamradio.mustafakanmaz.com",
+            link: "/ham-radio-exam-prep",
             gradient: "from-indigo-500/20 to-purple-600/20",
             accentColor: "indigo-500",
             stats: [
@@ -41,7 +41,7 @@ export default function ProjectsMasterpiece() {
             links: [
                 { label: "Android", url: "https://play.google.com/store/apps/details?id=com.kanmazmustafa.ushamradio", type: "android", active: true },
                 { label: "iOS", url: "/coming-soon", type: "ios" },
-                { label: "Web App", url: "https://hamradio.mustafakanmaz.com", type: "web", active: true }
+                { label: "Web App", url: "https://hamradio.mustafakanmaz.com/", type: "web", active: true }
             ]
         },
         {
@@ -82,7 +82,7 @@ export default function ProjectsMasterpiece() {
             title: "Best Berater",
             category: "Energy Management",
             description: "Strategic energy consultancy and subscription optimization platform for industrial and commercial consumers.",
-            link: "https://bestberater.de",
+            link: "/best-berater",
             gradient: "from-emerald-600/20 to-teal-600/20",
             accentColor: "emerald-500",
             stats: [
@@ -138,6 +138,8 @@ export default function ProjectsMasterpiece() {
 
 function ProjectCard({ project, index }: { project: any, index: number }) {
     const router = useRouter();
+    const params = useParams();
+    const locale = params?.locale || 'tr';
     const { theme } = useTheme();
     const animationProps = {
         initial: { opacity: 0, y: 20 },
@@ -153,14 +155,15 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         if (project.link.startsWith('http')) {
             window.open(project.link, '_blank', 'noopener,noreferrer');
         } else {
-            router.push(project.link);
+            router.push(`/${locale}${project.link}`);
         }
     };
 
     return (
         <motion.div
             {...animationProps}
-            className="relative rounded-[2.5rem] overflow-hidden border border-slate-200 dark:border-[var(--card-border)] bg-white dark:bg-[var(--card-bg)] group h-full flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-slate-200 dark:hover:shadow-indigo-500/5"
+            onClick={handleCardClick}
+            className="relative rounded-[2.5rem] overflow-hidden border border-slate-200 dark:border-[var(--card-border)] bg-white dark:bg-[var(--card-bg)] group h-full flex flex-col transition-all duration-500 hover:shadow-2xl hover:shadow-slate-200 dark:hover:shadow-indigo-500/5 cursor-pointer"
         >
             {/* Extremely subtle gradient in light mode, stronger in dark */}
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-10 dark:opacity-40 group-hover:opacity-100 transition-opacity duration-700`} />
@@ -201,7 +204,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
                         {project.links.map((link: any, li: number) => (
                             <a
                                 key={li}
-                                href={link.url}
+                                href={link.url.startsWith('http') ? link.url : `/${locale}${link.url}`}
                                 target={link.url.startsWith('http') ? "_blank" : "_self"}
                                 rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}
                                 onClick={(e) => e.stopPropagation()}

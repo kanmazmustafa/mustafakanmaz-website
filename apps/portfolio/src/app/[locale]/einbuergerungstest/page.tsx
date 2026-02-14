@@ -56,8 +56,10 @@ export default function EinbuergerungstestPage() {
                                 </div>
                             </a>
 
-                            <Link
-                                href="/coming-soon"
+                            <a
+                                href="https://apps.apple.com/us/app/lid-einburgerungstest/id6759058355"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="group px-10 py-5 bg-black/5 dark:bg-[#0b0f19] text-foreground dark:text-white border border-[var(--nav-border)] rounded-2xl font-black hover:bg-black/10 dark:hover:bg-white/5 transition-all flex items-center gap-4 hover:scale-[1.02]"
                             >
                                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.95C10.1,6.97 11.13,7.82 11.94,7.82C12.73,7.82 13.97,6.85 15.5,6.85C16.14,6.85 17.92,7.09 18.9,8.5C18.82,8.55 16.61,9.84 16.69,12.81C16.77,16.35 19.73,17.54 19.78,17.56C19.75,17.71 19.3,19.26 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.03,3.19 15.55,4.61 14.69,5.63C13.85,6.61 12.6,7.23 11.59,7.15C11.45,5.86 12.12,4.44 13,3.5Z" /></svg>
@@ -65,7 +67,7 @@ export default function EinbuergerungstestPage() {
                                     <div className="text-[10px] uppercase tracking-widest opacity-60">Download on</div>
                                     <div className="text-lg leading-none">App Store</div>
                                 </div>
-                            </Link>
+                            </a>
 
                             <a
                                 href={`/einbuergerungstest/app${locale === 'en' ? '' : '/' + locale}`}
