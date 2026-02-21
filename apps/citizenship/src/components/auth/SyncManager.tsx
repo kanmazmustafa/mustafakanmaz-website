@@ -84,6 +84,9 @@ export function SyncManager() {
         store.rewardedUntil,
         store.hasAcceptedDisclaimer,
         store.isPremium,
+        store.lastIndices,
+        store.streaks,
+        store.bookmarks,
         setSyncStatus
     ]);
 
