@@ -21,6 +21,16 @@
                     "source": "/:locale(ar|bg|bs|de|el|en|es|fa|fr|he|hi|hr|hu|it|ja|ku|nl|pl|ps|pt|ro|ru|sq|sr|th|tr|uk|vi|zh)/einbuergerungstest/app/:path*",
                     "destination": "/einbuergerungstest/app/:locale/:path*",
                     "type": 301
+                },
+                {
+                    "source": "/:locale(ar|bg|bs|de|el|en|es|fa|fr|he|hi|hr|hu|it|ja|ku|nl|pl|ps|pt|ro|ru|sq|sr|th|tr|uk|vi|zh)",
+                    "destination": "/",
+                    "type": 301
+                },
+                {
+                    "source": "/:locale(ar|bg|bs|de|el|en|es|fa|fr|he|hi|hr|hu|it|ja|ku|nl|pl|ps|pt|ro|ru|sq|sr|th|tr|uk|vi|zh)/:path*",
+                    "destination": "/:path*",
+                    "type": 301
                 }
             ],
             "rewrites": [

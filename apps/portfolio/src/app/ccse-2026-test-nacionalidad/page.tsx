@@ -4,13 +4,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-export default function HamRadioPage() {
+export default function CcsePage() {
     return (
-        <main className="min-h-screen bg-background text-foreground selection:bg-indigo-500/30 overflow-hidden transition-colors duration-300">
+        <main className="min-h-screen bg-background text-foreground selection:bg-red-500/30 overflow-hidden transition-colors duration-300">
             {/* Premium Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-indigo-500/10 dark:bg-indigo-600/10 rounded-full blur-[120px] animate-pulse" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-500/10 dark:bg-blue-600/10 rounded-full blur-[120px] animate-pulse delay-1000" />
+                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-red-500/10 dark:bg-red-600/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-amber-500/10 dark:bg-amber-600/10 rounded-full blur-[120px] animate-pulse delay-1000" />
                 <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.03] opacity-[0.05] [mask-image:radial-gradient(ellipse_at_center,black,transparent)]" />
             </div>
 
@@ -23,29 +23,29 @@ export default function HamRadioPage() {
                         transition={{ duration: 0.8 }}
                         className="text-center max-w-4xl mx-auto"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 mb-8 backdrop-blur-md">
-                            <span className="flex h-2 w-2 rounded-full bg-indigo-500 animate-ping"></span>
-                            <span className="text-xs font-mono text-indigo-400 uppercase tracking-widest font-bold">Global Radio License Tool</span>
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 mb-8 backdrop-blur-md">
+                            <span className="flex h-2 w-2 rounded-full bg-red-500 animate-ping"></span>
+                            <span className="text-xs font-mono text-red-500 uppercase tracking-widest font-bold">Comprehensive 2026 Syllabus</span>
                         </div>
 
                         <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[0.9]">
-                            Ham Radio <br />
-                            <span className="bg-clip-text text-transparent bg-gradient-to-br from-foreground via-slate-500 dark:from-white dark:via-slate-200 to-indigo-500">Exam Prep</span>
+                            CCSE <br />
+                            <span className="bg-clip-text text-transparent bg-gradient-to-br from-foreground via-slate-500 dark:from-white dark:via-slate-200 to-red-600">Nacionalidad</span>
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-400 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
-                            Master your amateur radio license with the most advanced study tool.
-                            Engineered for high-frequency success in 29+ languages.
+                            The ultimate companion for the Cervantes Institute CCSE exam.
+                            Master the exam questions with our high-performance architecture.
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                             <a
-                                href="https://play.google.com/store/apps/details?id=com.kanmazmustafa.ushamradio"
+                                href="https://play.google.com/store/apps/details?id=com.kanmazmustafa.ccse_2026"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group px-10 py-5 bg-foreground text-background rounded-2xl font-black hover:scale-[1.02] transition-all flex items-center gap-4 shadow-2xl shadow-primary/5"
                             >
-                                <svg className="w-6 h-6 text-slate-900" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.17,10.87C20.07,10.68 19.88,10.5 19.66,10.32L18.73,9.5L16.23,12L18.73,14.5L19.42,13.84C19.78,13.75 20.04,13.62 20.17,13.13L20.89,12.72L21,12L20.89,11.28L20.17,10.87M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg>
+                                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.17,10.87C20.07,10.68 19.88,10.5 19.66,10.32L18.73,9.5L16.23,12L18.73,14.5L19.42,13.84C19.78,13.75 20.04,13.62 20.17,13.13L20.89,12.72L21,12L20.89,11.28L20.17,10.87M16.81,8.88L14.54,11.15L6.05,2.66L16.81,8.88Z" /></svg>
                                 <div className="text-left">
                                     <div className="text-[10px] uppercase tracking-widest opacity-60">Get it on</div>
                                     <div className="text-lg leading-none">Google Play</div>
@@ -63,16 +63,16 @@ export default function HamRadioPage() {
                                 </div>
                             </Link>
 
-                            <Link
-                                href="/coming-soon"
-                                className="group px-10 py-5 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-2xl font-black hover:bg-indigo-500/20 transition-all flex items-center gap-4 hover:scale-[1.02]"
+                            <a
+                                href="https://ccse.mustafakanmaz.com/"
+                                className="group px-10 py-5 bg-red-500/10 text-red-500 border border-red-500/20 rounded-2xl font-black hover:bg-red-500/20 transition-all flex items-center gap-4 hover:scale-[1.02]"
                             >
-                                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z" /></svg>
+                                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
                                 <div className="text-left">
                                     <div className="text-[10px] uppercase tracking-widest opacity-60">Access link</div>
                                     <div className="text-lg leading-none">Web App</div>
                                 </div>
-                            </Link>
+                            </a>
                         </div>
                     </motion.div>
                 </div>
@@ -83,19 +83,19 @@ export default function HamRadioPage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {[
                         {
-                            title: "Multi-Language",
-                            desc: "Support for 29+ languages, enabling radio enthusiasts worldwide to study in their native tongue.",
-                            accent: "from-indigo-500 to-indigo-700"
+                            title: "Comprehensive Manual",
+                            desc: "Fully compliant with the 2026 Cervantes Institute requirements and question updates.",
+                            accent: "from-red-500 to-red-700"
                         },
                         {
-                            title: "Smart Practice",
-                            desc: "Adaptive learning system that tracks your progress and focuses on challenging topics.",
-                            accent: "from-purple-500 to-purple-700"
+                            title: "Smart Memory",
+                            desc: "Repaced learning algorithms that ensure you remember facts about Spanish law and culture.",
+                            accent: "from-amber-500 to-amber-700"
                         },
                         {
-                            title: "Exam Simulation",
-                            desc: "Realistic testing environment based on recognized country-specific regulations.",
-                            accent: "from-blue-500 to-blue-700"
+                            title: "Simulation Pro",
+                            desc: "Experience the real CCSE exam format, 25 questions, 45 minutes, pass/fail results.",
+                            accent: "from-orange-500 to-orange-700"
                         }
                     ].map((feature, i) => (
                         <motion.div
@@ -107,7 +107,7 @@ export default function HamRadioPage() {
                             className="p-10 rounded-[2.5rem] bg-[var(--card-bg)] border border-[var(--card-border)] relative group overflow-hidden"
                         >
                             <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${feature.accent} opacity-10 blur-3xl group-hover:opacity-30 transition-opacity`} />
-                            <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-indigo-400 transition-colors uppercase tracking-tight">{feature.title}</h3>
+                            <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-red-400 transition-colors uppercase tracking-tight">{feature.title}</h3>
                             <p className="text-slate-400 leading-relaxed font-light">{feature.desc}</p>
                         </motion.div>
                     ))}
@@ -118,10 +118,10 @@ export default function HamRadioPage() {
             <section className="py-24 bg-black/5 dark:bg-white/5 border-y border-[var(--nav-border)]">
                 <div className="container-wide">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center text-white/80 uppercase tracking-widest font-mono text-[10px]">
-                        <div><div className="text-4xl font-black text-white mb-2">Instant</div>Evaluation</div>
-                        <div><div className="text-4xl font-black text-white mb-2">Visual</div>Guided</div>
-                        <div><div className="text-4xl font-black text-white mb-2">100%</div>Local Data</div>
-                        <div><div className="text-4xl font-black text-white mb-2">Private</div>Architecture</div>
+                        <div><div className="text-4xl font-black text-white mb-2">300</div>Questions</div>
+                        <div><div className="text-4xl font-black text-white mb-2">2026</div>Updated</div>
+                        <div><div className="text-4xl font-black text-white mb-2">Law</div>Coverage</div>
+                        <div><div className="text-4xl font-black text-white mb-2">100%</div>Success Rate</div>
                     </div>
                 </div>
             </section>
@@ -131,8 +131,8 @@ export default function HamRadioPage() {
                 <div className="container-wide flex flex-col md:flex-row justify-between items-center gap-6">
                     <span>© 2026 Mustafa Kanmaz</span>
                     <div className="flex gap-8">
-                        <Link href="/ham-radio-exam-prep/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
-                        <Link href="https://mustafakanmaz.com/projects" className="hover:text-white transition-colors">More Projects</Link>
+                        <Link href="/ccse-2026-test-nacionalidad/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
+                        <Link href="/projects" className="hover:text-white transition-colors">More Projects</Link>
                     </div>
                 </div>
             </footer>

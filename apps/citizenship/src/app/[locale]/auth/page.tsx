@@ -11,9 +11,11 @@ import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Loader2 } from "lucide-react";
+import { FooterLinks } from "@/components/dashboard/FooterLinks";
 
 export default function AuthPage() {
-    const t = useTranslations('auth'); // Assuming 'auth' translations exist
+    const t = useTranslations('auth');
+    const tHome = useTranslations('home');
     const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState("");
@@ -161,6 +163,84 @@ export default function AuthPage() {
 
                 </CardContent>
             </Card>
+
+            {/* SEO Content Section for AdSense robots */}
+            <div className="max-w-4xl w-full mt-20 px-4 pb-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-slate-600 leading-relaxed">
+                    <section>
+                        <h2 className="text-2xl font-bold text-slate-900 mb-4">{tHome('app_title')}</h2>
+                        <p className="mb-4">
+                            Prepare for your German naturalization test (Einbürgerungstest) with the most comprehensive study tool available in 2026.
+                            Our application offers a complete database of 300+ official questions from the Federal Office for Migration and Refugees (BAMF).
+                        </p>
+                        <p>
+                            Study effectively for the citizenship exam by practicing all general questions and specific questions for all 16 federal states of Germany.
+                            Whether you live in Bayern, Berlin, or Nordrhein-Westfalen, we have the specialized curriculum you need to succeed.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3 className="text-xl font-bold text-slate-800 mb-4">Why use this Citizenship Test Prep?</h3>
+                        <ul className="space-y-3 list-disc pl-5">
+                            <li><strong>Official BAMF Questions:</strong> All questions are sourced directly from the latest official catalogue.</li>
+                            <li><strong>State-Specific Modules:</strong> Specialized questions for all 16 German Bundesländer.</li>
+                            <li><strong>Exam Simulations:</strong> Real-time 33-question simulations with a 60-minute timer, mirroring the actual testing conditions.</li>
+                            <li><strong>Mistake History:</strong> Review your errors to focus on the areas where you need the most improvement.</li>
+                            <li><strong>Multiple Languages:</strong> Study in your most comfortable language while learning the official German terminology.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3 className="text-xl font-bold text-slate-800 mb-4">Federal States Covered</h3>
+                        <p className="mb-4 text-sm">
+                            We provide comprehensive preparation for all German states:
+                            Baden-Württemberg, Bayern, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Vorpommern, Niedersachsen,
+                            Nordrhein-Westfalen, Rheinland-Pfalz, Saarland, Sachsen, Sachsen-Anhalt, Schleswig-Holstein, and Thüringen.
+                        </p>
+                        <p className="text-sm">
+                            Each state has its own unique set of questions focusing on local politics, history, and social structures.
+                            Our platform allows you to switch between states instantly to practice the specific content relevant to your place of residence.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3 className="text-xl font-bold text-slate-800 mb-4">Preparation Tips</h3>
+                        <p className="text-sm">
+                            Consistent practice is the key to passing the <strong>Einbürgerungstest</strong>. Most candidates succeed by practicing
+                            15-20 minutes daily. Focus on categories like "People and Society" and "Politics in Democracy" to build
+                            a solid foundation of knowledge about the German legal system and social values.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div className="max-w-4xl w-full mt-12 py-8 border-t border-slate-200">
+                <FooterLinks />
+            </div>
+
+            {/* Structured Data for SEO */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "WebApplication",
+                        "name": "Citizenship Test Germany 2026",
+                        "description": "Preparation tool for the German naturalization test (Einbürgerungstest) featuring official BAMF questions.",
+                        "applicationCategory": "EducationalApplication",
+                        "operatingSystem": "Web",
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "EUR"
+                        },
+                        "author": {
+                            "@type": "Person",
+                            "name": "Mustafa Kanmaz"
+                        }
+                    })
+                }}
+            />
         </div>
     );
 }

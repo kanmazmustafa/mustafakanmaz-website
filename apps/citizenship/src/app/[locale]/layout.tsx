@@ -9,6 +9,14 @@ import { DisclaimerOverlay } from '@/components/common/DisclaimerOverlay';
 
 import { Outfit, Plus_Jakarta_Sans } from 'next/font/google';
 import "../globals.css";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Citizenship Test Germany 2026 | Preparation App (Einbürgerungstest)',
+    description: 'Prepare for the German Citizenship Test (Einbürgerungstest) with official questions from BAMF. Study for all 16 federal states with exam simulations and practice modes.',
+    keywords: 'German citizenship test, Einbürgerungstest 2026, BAMF questions, German naturalization test, citizenship preparation Germany, Leben in Deutschland',
+    robots: 'index, follow',
+};
 
 const outfit = Outfit({
     subsets: ['latin'],

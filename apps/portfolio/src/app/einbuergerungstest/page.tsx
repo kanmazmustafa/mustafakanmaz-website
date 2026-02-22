@@ -3,11 +3,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 
 export default function EinbuergerungstestPage() {
-    const params = useParams();
-    const locale = params?.locale || 'tr';
 
     return (
         <main className="min-h-screen bg-background text-foreground selection:bg-amber-500/30 overflow-hidden transition-colors duration-300">
@@ -70,7 +67,7 @@ export default function EinbuergerungstestPage() {
                             </a>
 
                             <a
-                                href={`/einbuergerungstest/app${locale === 'en' ? '' : '/' + locale}`}
+                                href="/einbuergerungstest/app"
                                 className="group px-10 py-5 bg-amber-500/10 text-amber-500 border border-amber-500/20 rounded-2xl font-black hover:bg-amber-500/20 transition-all flex items-center gap-4 hover:scale-[1.02]"
                             >
                                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>

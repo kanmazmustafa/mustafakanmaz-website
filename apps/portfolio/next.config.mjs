@@ -6,18 +6,24 @@ const nextConfig = {
         unoptimized: true,
     },
     output: 'standalone',
-    // transpilePackages: ['firebase', '@firebase/app', '@firebase/auth', '@firebase/firestore'],
     eslint: {
         ignoreDuringBuilds: true,
     },
     typescript: {
         ignoreBuildErrors: true,
     },
+    async rewrites() {
+        return [
+            {
+                source: '/einbuergerungstest/app',
+                destination: 'http://localhost:3001/einbuergerungstest/app',
+            },
+            {
+                source: '/einbuergerungstest/app/:path*',
+                destination: 'http://localhost:3001/einbuergerungstest/app/:path*',
+            },
+        ];
+    },
 };
 
-const withNextIntl = createNextIntlPlugin(
-    './src/i18n/request.ts'
-);
-
-export default withNextIntl(nextConfig);
-// export default nextConfig;
+export default nextConfig;
