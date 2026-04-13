@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 import { useTheme } from './ThemeProvider';
 
@@ -59,6 +59,23 @@ export default function ProjectsMasterpiece() {
                 { label: "Android", url: "/coming-soon", type: "android" },
                 { label: "iOS", url: "/coming-soon", type: "ios" },
                 { label: "Web App", url: "/ccse-2026-test-nacionalidad", type: "web", active: true }
+            ]
+        },
+        {
+            title: "Chronicle",
+            category: "LitRPG & RPG Tools",
+            description: "A sophisticated character and story management tool for the next generation of LitRPG. Real-time stat tracking and evolution history.",
+            link: "/chronicle-litrpg-tracker",
+            gradient: "from-amber-500/20 to-violet-600/20",
+            accentColor: "amber-500",
+            stats: [
+                { label: "Status", value: "Beta" },
+                { label: "Evolution", value: "∞" }
+            ],
+            links: [
+                { label: "Android", url: "/coming-soon", type: "android" },
+                { label: "iOS", url: "/coming-soon", type: "ios" },
+                { label: "Details", url: "/chronicle-litrpg-tracker", type: "web", active: true }
             ]
         },
         {
@@ -138,8 +155,6 @@ export default function ProjectsMasterpiece() {
 
 function ProjectCard({ project, index }: { project: any, index: number }) {
     const router = useRouter();
-    const params = useParams();
-    const locale = params?.locale || 'tr';
     const { theme } = useTheme();
     const animationProps = {
         initial: { opacity: 0, y: 20 },
@@ -155,7 +170,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
         if (project.link.startsWith('http')) {
             window.open(project.link, '_blank', 'noopener,noreferrer');
         } else {
-            router.push(`/${locale}${project.link}`);
+            router.push(`${project.link}`);
         }
     };
 
@@ -204,7 +219,7 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
                         {project.links.map((link: any, li: number) => (
                             <a
                                 key={li}
-                                href={link.url.startsWith('http') ? link.url : `/${locale}${link.url}`}
+                                href={link.url}
                                 target={link.url.startsWith('http') ? "_blank" : "_self"}
                                 rel={link.url.startsWith('http') ? "noopener noreferrer" : ""}
                                 onClick={(e) => e.stopPropagation()}

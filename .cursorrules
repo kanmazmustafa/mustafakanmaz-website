@@ -1,0 +1,16 @@
+// .cursorrules
+/**
+ * Proje Kuralları ve Standartları
+ */
+
+// 1. Dil ve Stil:
+// - Tüm kod açıklamaları ve dökümantasyon Türkçe olmalıdır.
+// - Değişken ve fonksiyon isimleri İngilizce (camelCase) olmalıdır.
+// - Kod sonlarında her zaman noktalı virgül (;) kullanılmalıdır.
+
+// 2. Node.js Spesifik:
+// - Esnek ve modüler bir yapı için 'CommonJS' yerine 'ES Modules' (import/export) tercih edilmelidir.
+// - Asenkron işlemler mutlaka try-catch blokları içinde 'async/await' ile yönetilmelidir.
+
+// 3. Dosya Yapısı:
+// - Yeni bir kod talimatı verildiğinde, ilgili dosya adını ilk satırda yorum satırı olarak belirt.
